@@ -1,11 +1,11 @@
 {
   "name": "vue-2-breadcrumbs",
   "version": "0.0.1",
-  "description": "Breadcrumbs for Vue.js",
+  "description": "Breadcrumbs for Vue.js 2.0",
   "license": "MIT",
-  "repository": "gitscrum/vue-breadcrumbs",
-  "homepage": "gitscrum/vue-breadcrumbs#readme",
-  "bugs": "gitscrum/vue-breadcrumbs/issues",
+  "repository": "gitscrum/vue-2-breadcrumbs",
+  "homepage": "gitscrum/vue-2-breadcrumbs#readme",
+  "bugs": "gitscrum/vue-2-breadcrumbs/issues",
   "author": {
     "name": "Ivan Demidov",
     "email": "Scrum@list.ru",
