@@ -4,14 +4,14 @@
   "description": "Breadcrumbs for Vue.js 2.0",
   "license": "MIT",
   "repository": "gitscrum/vue-2-breadcrumbs",
-  "homepage": "gitscrum/vue-2-breadcrumbs#readme",
+  "homepage": "github.com/gitscrum/vue-2-breadcrumbs#readme",
   "bugs": "gitscrum/vue-2-breadcrumbs/issues",
   "author": {
     "name": "Ivan Demidov",
     "email": "Scrum@list.ru",
     "url": "https://twitter.com/Scrum_"
   },
-  "main": "lib/index.js",
+  "main": "dist/vue-2-breadcrumbs.js",
   "engines": {
     "node": ">=4"
   },
@@ -21,8 +21,8 @@
     "patch": "np patch --any-branch",
     "minor": "np minor --any-branch",
     "major": "np major --any-branch",
-    "clean": "rm -rf lib && mkdir lib",
-    "build": "npm run clean && babel src/ -d lib/",
+    "clean": "rm -rf dist && mkdir dist",
+    "build": "npm run clean && babel src/ -d dist/",
     "prepublish": "npm run build",
     "lintjs": "eslint ./src/*.js",
     "lintmd": "eslint --ext md --rule indent: [error, 4] .",
@@ -31,7 +31,7 @@
     "update": "updtr"
   },
   "files": [
-    "lib/"
+    "dist"
   ],
   "keywords": [
     "breadcrumbs",
@@ -62,6 +62,9 @@
     "np": "^2.12.0",
     "updtr": "^0.2.1"
   },
+  "browser": "dist/vue-2-breadcrumbs.js",
+  "unpkg": "dist/vue-2-breadcrumbs.js",
+  "style": "dist/vue-2-breadcrumbs.css",
   "babel": {
     "presets": [
       [
@@ -95,7 +98,7 @@
     "ignores": [
       "test/**",
       "tmp/**",
-      "lib/**",
+      "dist/**",
       "*.{html,jpg}"
     ],
     "rules": {
