@@ -1,3 +1,13 @@
+<a name="0.1.1"></a>
+## 0.1.1 (2017-03-30)
+
+* 0.1.1 ([df9e233](https://github.com/gitscrum/vue-2-breadcrumbs/commit/df9e233))
+* chore(*): lib to dist and unpkg ([e830da2](https://github.com/gitscrum/vue-2-breadcrumbs/commit/e830da2))
+* chore(changelog): Update changelog ([93db0c4](https://github.com/gitscrum/vue-2-breadcrumbs/commit/93db0c4))
+* docs(readme): add, close #1 ([ff8f589](https://github.com/gitscrum/vue-2-breadcrumbs/commit/ff8f589)), closes [#1](https://github.com/gitscrum/vue-2-breadcrumbs/issues/1)
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2017-03-29)
 

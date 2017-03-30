@@ -2,6 +2,7 @@ node_modules
 .nyc_output
 npm-debug.log
 lib
+dist
 _gh-pages
 .publish
 *.sublime*
