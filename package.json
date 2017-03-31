@@ -49,7 +49,7 @@
     "clinton": "^0.11.0",
     "conventional-changelog-cli": "^1.2.0",
     "conventional-changelog-lint": "^1.1.0",
-    "eslint": "^3.14.1",
+    "eslint": "^3.19.0",
     "eslint-config-vue": "^2.0.2",
     "eslint-config-xo": "^0.17.0",
     "eslint-formatter-pretty": "^1.1.0",
