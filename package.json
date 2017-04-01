@@ -60,7 +60,7 @@
     "eslint-plugin-xo": "^1.0.0",
     "husky": "^0.13.1",
     "np": "^2.12.0",
-    "updtr": "^0.2.1"
+    "updtr": "^1.0.0"
   },
   "browser": "dist/vue-2-breadcrumbs.js",
   "unpkg": "dist/vue-2-breadcrumbs.js",
