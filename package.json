@@ -40,7 +40,7 @@
     "vuejs"
   ],
   "devDependencies": {
-    "babel-cli": "^6.22.2",
+    "babel-cli": "^6.24.1",
     "babel-eslint": "^7.0.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-babili": "0.0.12",
