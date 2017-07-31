@@ -7,4 +7,3 @@ _gh-pages
 .publish
 *.sublime*
 coverage
-tmp
