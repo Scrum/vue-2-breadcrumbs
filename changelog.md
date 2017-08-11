@@ -1,3 +1,31 @@
+<a name="0.1.2"></a>
+## 0.1.2 (2017-08-11)
+
+* 0.1.2 ([9537f7e](https://github.com/gitscrum/vue-2-breadcrumbs/commit/9537f7e))
+* Update .editorconfig ([866ae01](https://github.com/gitscrum/vue-2-breadcrumbs/commit/866ae01))
+* Update .gitignore ([1064bfb](https://github.com/gitscrum/vue-2-breadcrumbs/commit/1064bfb))
+* Update .npmignore ([d16ae18](https://github.com/gitscrum/vue-2-breadcrumbs/commit/d16ae18))
+* style: linters ([60623ce](https://github.com/gitscrum/vue-2-breadcrumbs/commit/60623ce))
+* fix: index name ([b183284](https://github.com/gitscrum/vue-2-breadcrumbs/commit/b183284))
+* fix: typo ([e988bb3](https://github.com/gitscrum/vue-2-breadcrumbs/commit/e988bb3))
+* chore: add lock file ([7f408a9](https://github.com/gitscrum/vue-2-breadcrumbs/commit/7f408a9))
+* chore(changelog): Update changelog ([5c51241](https://github.com/gitscrum/vue-2-breadcrumbs/commit/5c51241))
+* chore(package): update babel-cli to version 6.24.1 ([2c099f1](https://github.com/gitscrum/vue-2-breadcrumbs/commit/2c099f1))
+* chore(package): update babel-eslint to version 7.2.3 ([2045850](https://github.com/gitscrum/vue-2-breadcrumbs/commit/2045850))
+* chore(package): update babel-preset-env to version 1.3.3 ([d234179](https://github.com/gitscrum/vue-2-breadcrumbs/commit/d234179))
+* chore(package): update babel-preset-env to version 1.4.0 ([03f8fbe](https://github.com/gitscrum/vue-2-breadcrumbs/commit/03f8fbe))
+* chore(package): update babel-register to version 6.24.0 ([31461e4](https://github.com/gitscrum/vue-2-breadcrumbs/commit/31461e4))
+* chore(package): update babel-register to version 6.24.1 ([853a832](https://github.com/gitscrum/vue-2-breadcrumbs/commit/853a832))
+* chore(package): update clinton to version 0.13.0 ([5115166](https://github.com/gitscrum/vue-2-breadcrumbs/commit/5115166))
+* chore(package): update conventional-changelog-lint to version 1.1.8 ([914a1d3](https://github.com/gitscrum/vue-2-breadcrumbs/commit/914a1d3))
+* chore(package): update dependencies ([1c0e400](https://github.com/gitscrum/vue-2-breadcrumbs/commit/1c0e400))
+* chore(package): update eslint to version 3.19.0 ([5f28fe6](https://github.com/gitscrum/vue-2-breadcrumbs/commit/5f28fe6))
+* chore(package): update husky to version 0.13.4 ([d06bc56](https://github.com/gitscrum/vue-2-breadcrumbs/commit/d06bc56))
+* chore(package): update np to version 2.15.0 ([7c75148](https://github.com/gitscrum/vue-2-breadcrumbs/commit/7c75148))
+* chore(package): update updtr to version 1.0.0 ([4a48dbd](https://github.com/gitscrum/vue-2-breadcrumbs/commit/4a48dbd))
+
+
+
 <a name="0.1.1"></a>
 ## 0.1.1 (2017-03-30)
 
