@@ -59,8 +59,8 @@
     "eslint-plugin-vue": "^2.0.1",
     "eslint-plugin-xo": "^1.0.0",
     "husky": "^0.13.4",
-    "updtr": "^1.0.0"
-    "np": "^2.15.0",
+    "updtr": "^1.0.0",
+    "np": "^2.15.0"
   },
   "browser": "dist/vue-2-breadcrumbs.js",
   "unpkg": "dist/vue-2-breadcrumbs.js",
