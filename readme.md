@@ -20,8 +20,6 @@ $ npm install vue-2-breadcrumbs
 ```js
 import Vue from 'vue';
 import Breabcrumbs from 'vue-2-breadcrumbs';
-// You need a specific loader for CSS files like https://github.com/webpack/css-loader
-import 'vue-2-breadcrumbs.css';
 
 Vue.use(Breabcrumbs);
 ```
@@ -31,11 +29,9 @@ Vue.use(Breabcrumbs);
 ```html
 <!-- Include after Vue -->
 <!-- Local files -->
-<link rel="stylesheet" href="vue-2-breadcrumbs/dist/vue-2-breadcrumbs.css"></link>
 <script src="vue-2-breadcrumbs/dist/vue-2-breadcrumbs.js"></script>
 
 <!-- From CDN -->
-<link rel="stylesheet" href="https://unpkg.com/vue-2-breadcrumbs/dist/vue-2-breadcrumbs.css"></link>
 <script src="https://unpkg.com/vue-2-breadcrumbs.js"></script>
 ```
 
