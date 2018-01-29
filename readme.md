@@ -67,7 +67,7 @@ const router = new VueRouter({
                     path: 'foo',
                     component: Foo,
                     meta: {
-                        breadcrumb: () => 'fo' + 'o'
+                        breadcrumb: () => `foo ${1 + 1}`
                     }
                 },
                 {

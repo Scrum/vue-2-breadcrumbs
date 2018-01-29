@@ -10,9 +10,9 @@ export default {
 
 		Vue.component('breadcrumbs', {
 			methods: {
-				getBreadcrumb: function getBreadcrumb(bc) {
-					return typeof bc === 'function' ? bc() : bc
-				},
+				getBreadcrumb: function (bc) {
+					return typeof bc === 'function' ? bc() : bc;
+				}
 			},
 			template: `
 				<ol class="breadcrumb" v-if="$breadcrumbs.length">
