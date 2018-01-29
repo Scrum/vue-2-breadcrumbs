@@ -56,8 +56,7 @@
     "eslint-plugin-require-path-exists": "^1.1.5",
     "eslint-plugin-vue": "^2.0.1",
     "eslint-plugin-xo": "^1.0.0",
-    "husky": "^0.13.4",
-    "updtr": "^1.0.0"
+    "husky": "^0.13.4"
   },
   "browser": "dist/vue-2-breadcrumbs.js",
   "unpkg": "dist/vue-2-breadcrumbs.js",
