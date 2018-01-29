@@ -16,8 +16,8 @@
     "node": ">=4"
   },
   "scripts": {
-    "commitmsg": "conventional-changelog-lint -e",
-    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog\"",
+    "commitmsg": "commitlint --extends=@commitlint/config-angular -e",
+    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
     "clean": "rm -rf dist && mkdir dist",
     "build": "npm run clean && babel src/ -d dist/",
     "prepublish": "npm run build",
@@ -37,6 +37,8 @@
     "vuejs"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^5.2.0",
+    "@commitlint/config-angular": "^5.1.1",
     "babel": "^6.23.0",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
@@ -46,7 +48,6 @@
     "babel-register": "^6.24.1",
     "clinton": "^0.13.0",
     "conventional-changelog-cli": "^1.2.0",
-    "conventional-changelog-lint": "^1.1.8",
     "eslint": "^3.19.0",
     "eslint-config-vue": "^2.0.2",
     "eslint-config-xo": "^0.18.1",
