@@ -79,7 +79,6 @@
       "xo",
       "vue",
       "babel",
-      "require-path-exists",
       "markdown"
     ],
     "extends": [
