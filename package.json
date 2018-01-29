@@ -88,8 +88,7 @@
       "markdown"
     ],
     "extends": [
-      "plugin:unicorn/recommended",
-      "plugin:ava/recommended"
+      "plugin:unicorn/recommended"
     ]
   },
   "clinton": {
