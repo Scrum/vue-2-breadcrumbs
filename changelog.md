@@ -1,3 +1,12 @@
+<a name="0.2.2"></a>
+## <small>0.2.2 (2018-01-29)</small>
+
+* 0.2.2 ([ae8c449](https://github.com/gitscrum/vue-2-breadcrumbs/commit/ae8c449))
+* build: fix version ([bc3287d](https://github.com/gitscrum/vue-2-breadcrumbs/commit/bc3287d))
+* build: update changelog ([8506938](https://github.com/gitscrum/vue-2-breadcrumbs/commit/8506938))
+
+
+
 <a name="0.1.3"></a>
 ## <small>0.1.3 (2018-01-29)</small>
 
