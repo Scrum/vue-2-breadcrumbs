@@ -19,8 +19,8 @@
     "precommit": "clinton && lint-staged",
     "commitmsg": "commitlint --extends=@commitlint/config-angular -e",
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
+    "prepare": "npm run build",
     "build": "rimraf lib && babel src -d lib",
-    "prepublish": "npm run build",
     "test": "nyc ava",
     "update": "updtr"
   },
