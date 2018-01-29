@@ -18,9 +18,6 @@
   "scripts": {
     "commitmsg": "conventional-changelog-lint -e",
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog\"",
-    "patch": "np patch --any-branch",
-    "minor": "np minor --any-branch",
-    "major": "np major --any-branch",
     "clean": "rm -rf dist && mkdir dist",
     "build": "npm run clean && babel src/ -d dist/",
     "prepublish": "npm run build",
@@ -60,7 +57,6 @@
     "eslint-plugin-vue": "^2.0.1",
     "eslint-plugin-xo": "^1.0.0",
     "husky": "^0.13.4",
-    "np": "^2.15.0",
     "updtr": "^1.0.0"
   },
   "browser": "dist/vue-2-breadcrumbs.js",
