@@ -21,7 +21,7 @@
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
     "prepare": "npm run build",
     "build": "rimraf lib && babel src -d lib",
-    "test": "nyc ava"
+    "test": "echo issue #3"
   },
   "files": [
     "dist"
@@ -83,7 +83,6 @@
   "eslintConfig": {
     "parser": "babel-eslint",
     "plugins": [
-      "ava",
       "unicorn",
       "babel",
       "markdown"
