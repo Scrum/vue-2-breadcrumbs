@@ -1,5 +1,33 @@
+<a name="0.1.3"></a>
+## <small>0.1.3 (2018-01-29)</small>
+
+* 0.1.3 ([5e2c102](https://github.com/gitscrum/vue-2-breadcrumbs/commit/5e2c102))
+* Make breadcrumbs dynamic, i.e. now they may be functions. ([ccb0b83](https://github.com/gitscrum/vue-2-breadcrumbs/commit/ccb0b83))
+* Update README to reflect new dynamic breadcrumb feature ([58e7c63](https://github.com/gitscrum/vue-2-breadcrumbs/commit/58e7c63))
+* Update readme.md ([7a0ec7f](https://github.com/gitscrum/vue-2-breadcrumbs/commit/7a0ec7f))
+* build: Add Babel locally ([401a519](https://github.com/gitscrum/vue-2-breadcrumbs/commit/401a519))
+* build: add lint staged ([a19c84e](https://github.com/gitscrum/vue-2-breadcrumbs/commit/a19c84e))
+* build: change babili to minify ([8cb35cd](https://github.com/gitscrum/vue-2-breadcrumbs/commit/8cb35cd))
+* build: change prepublish to prepare ([89b3725](https://github.com/gitscrum/vue-2-breadcrumbs/commit/89b3725))
+* build: drop np and script for np ([792af11](https://github.com/gitscrum/vue-2-breadcrumbs/commit/792af11))
+* build: drop path exists for eslint ([a220960](https://github.com/gitscrum/vue-2-breadcrumbs/commit/a220960))
+* build: drop unused pkg ([d32107f](https://github.com/gitscrum/vue-2-breadcrumbs/commit/d32107f))
+* build: drop updtr ([f5a6282](https://github.com/gitscrum/vue-2-breadcrumbs/commit/f5a6282))
+* build: drop updtr script ([7a7ba73](https://github.com/gitscrum/vue-2-breadcrumbs/commit/7a7ba73))
+* build: fix eslint config ([98168b5](https://github.com/gitscrum/vue-2-breadcrumbs/commit/98168b5))
+* build: remove test script ([537aa78](https://github.com/gitscrum/vue-2-breadcrumbs/commit/537aa78))
+* build: update build script ([7d800ea](https://github.com/gitscrum/vue-2-breadcrumbs/commit/7d800ea))
+* build: update commit linter ([02d1a7c](https://github.com/gitscrum/vue-2-breadcrumbs/commit/02d1a7c))
+* build: update depDev ([0b90d73](https://github.com/gitscrum/vue-2-breadcrumbs/commit/0b90d73))
+* build: update lint config ([7870016](https://github.com/gitscrum/vue-2-breadcrumbs/commit/7870016))
+* build: update markdown plugin for eslint ([6393f97](https://github.com/gitscrum/vue-2-breadcrumbs/commit/6393f97))
+* style: Improve Code style ([a8e0737](https://github.com/gitscrum/vue-2-breadcrumbs/commit/a8e0737))
+* chore(changelog): Update changelog ([2265ab1](https://github.com/gitscrum/vue-2-breadcrumbs/commit/2265ab1))
+
+
+
 <a name="0.1.2"></a>
-## 0.1.2 (2017-08-11)
+## <small>0.1.2 (2017-08-11)</small>
 
 * 0.1.2 ([9537f7e](https://github.com/gitscrum/vue-2-breadcrumbs/commit/9537f7e))
 * Update .editorconfig ([866ae01](https://github.com/gitscrum/vue-2-breadcrumbs/commit/866ae01))
@@ -27,7 +55,7 @@
 
 
 <a name="0.1.1"></a>
-## 0.1.1 (2017-03-30)
+## <small>0.1.1 (2017-03-30)</small>
 
 * 0.1.1 ([df9e233](https://github.com/gitscrum/vue-2-breadcrumbs/commit/df9e233))
 * chore(*): lib to dist and unpkg ([e830da2](https://github.com/gitscrum/vue-2-breadcrumbs/commit/e830da2))
@@ -37,7 +65,7 @@
 
 
 <a name="0.1.0"></a>
-# 0.1.0 (2017-03-29)
+## 0.1.0 (2017-03-29)
 
 * 0.1.0 ([dfcadec](https://github.com/gitscrum/vue-2-breadcrumbs/commit/dfcadec))
 * feat(index): disable last link ([add9b00](https://github.com/gitscrum/vue-2-breadcrumbs/commit/add9b00))
@@ -49,7 +77,7 @@
 
 
 <a name="0.0.1"></a>
-## 0.0.1 (2017-03-28)
+## <small>0.0.1 (2017-03-28)</small>
 
 * 0.0.1 ([d3dd94c](https://github.com/gitscrum/vue-2-breadcrumbs/commit/d3dd94c))
 * style(package): fix version ([3953c35](https://github.com/gitscrum/vue-2-breadcrumbs/commit/3953c35))
