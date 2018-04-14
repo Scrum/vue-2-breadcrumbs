@@ -3,9 +3,9 @@
   "version": "0.2.3",
   "description": "Breadcrumbs for Vue.js 2.0",
   "license": "MIT",
-  "repository": "gitscrum/vue-2-breadcrumbs",
-  "homepage": "github.com/gitscrum/vue-2-breadcrumbs#readme",
-  "bugs": "gitscrum/vue-2-breadcrumbs/issues",
+  "repository": "Scrum/vue-2-breadcrumbs",
+  "homepage": "github.com/Scrum/vue-2-breadcrumbs#readme",
+  "bugs": "Scrum/vue-2-breadcrumbs/issues",
   "author": {
     "name": "Ivan Demidov",
     "email": "Scrum@list.ru",
