@@ -11,7 +11,7 @@
     "email": "Scrum@list.ru",
     "url": "https://twitter.com/Scrum_"
   },
-  "main": "dist/vue-2-breadcrumbs.js",
+  "main": "lib/vue-2-breadcrumbs.js",
   "engines": {
     "node": ">=4"
   },
@@ -24,7 +24,7 @@
     "test": "echo issue #3"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "keywords": [
     "breadcrumbs",
