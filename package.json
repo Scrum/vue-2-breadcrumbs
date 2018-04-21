@@ -54,9 +54,9 @@
     "lint-staged": "^7.0.4",
     "rimraf": "^2.6.2"
   },
-  "browser": "dist/vue-2-breadcrumbs.js",
-  "unpkg": "dist/vue-2-breadcrumbs.js",
-  "style": "dist/vue-2-breadcrumbs.css",
+  "browser": "lib/vue-2-breadcrumbs.js",
+  "unpkg": "lib/vue-2-breadcrumbs.js",
+  "style": "lib/vue-2-breadcrumbs.css",
   "lint-staged": {
     "{src,test}/**/*.{js,html,htm}": "eslint",
     "*.md": "eslint"
@@ -95,7 +95,7 @@
     "ignores": [
       "test/**",
       "tmp/**",
-      "dist/**",
+      "lib/**",
       "*.{html,jpg}"
     ],
     "rules": {
