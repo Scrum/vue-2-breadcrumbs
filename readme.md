@@ -45,6 +45,7 @@ Vue.use(VueRouter);
 Vue.use(VueBreadcrumbs);
 
 const Feeds = {template: '<div><router-view/></div>'};
+const Feed = {template: '<div><h2>Feed</h2></div>'};
 const Biz = {template: '<div><h2>Biz</h2></div>'};
 const Foo = {template: '<div><h2>Foo</h2></div>'};
 const Bar = {template: '<div><h2>Bar</h2></div>'};
@@ -76,6 +77,13 @@ const router = new VueRouter({
                     meta: {
                         breadcrumb: 'bar'
                     }
+                },
+                {
+                    path: ':id',
+                    component: Feed,
+                    meta: {
+                        breadcrumb: (routeParams) => `Other Feed ${routeParams.id}`
+                    }
                 }
             ]
         }
@@ -92,6 +100,9 @@ new Vue({
                     <div class="dropdown-menu">
                         <router-link to="/feeds/foo" class="dropdown-item">Foo</router-link>
                         <router-link to="/feeds/bar" class="dropdown-item">Bar</router-link>
+                        <router-link to="/feeds/1" class="dropdown-item">Other Feed 1</router-link>
+                        <router-link to="/feeds/2" class="dropdown-item">Other Feed 2</router-link>
+                        <router-link to="/feeds/3" class="dropdown-item">Other Feed 3</router-link>
                     </div>
                 </li>
             </ul>

@@ -20,7 +20,7 @@ export default {
     Vue.component('breadcrumbs', {
       methods: {
         getBreadcrumb: function (bc) {
-          return typeof bc === 'function' ? bc() : bc
+          return typeof bc === 'function' ? bc(this.$route.params) : bc
         }
       },
       template: `
