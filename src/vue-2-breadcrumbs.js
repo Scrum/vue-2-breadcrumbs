@@ -1,26 +1,26 @@
 export default {
-  install (Vue) {
+  install(Vue) {
     Object.defineProperties(Vue.prototype, {
       $breadcrumbs: {
-        get () {
+        get() {
           return this.$route.matched.map(r => {
-            let path = ''
-            let route = r
+            let path = '';
+            let route = r;
 
-            Object.keys(this.$route.params).map(e => {
-              path = route.path.replace(':' + e, this.$route.params[e])
-            }, this)
-            route.path = path
-            return route
-          }, this)
+            Object.keys(this.$route.params).forEach(e => {
+              path = route.path.replace(':' + e, this.$route.params[e]);
+            }, this);
+            route.path = path;
+            return route;
+          }, this);
         }
       }
-    })
+    });
 
     Vue.component('breadcrumbs', {
       methods: {
         getBreadcrumb: function (bc) {
-          return typeof bc === 'function' ? bc(this.$route.params) : bc
+          return typeof bc === 'function' ? bc(this.$route.params) : bc;
         }
       },
       template: `
@@ -30,6 +30,6 @@ export default {
           </li>
         </ol>
         `
-    })
+    });
   }
-}
+};
