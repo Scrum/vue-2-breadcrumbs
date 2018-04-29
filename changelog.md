@@ -1,3 +1,18 @@
+<a name="0.3.0"></a>
+## 0.3.0 (2018-04-29)
+
+* 0.3.0 ([5160ffb](https://github.com/Scrum/vue-2-breadcrumbs/commit/5160ffb))
+* style: according eslint ([ee62a28](https://github.com/Scrum/vue-2-breadcrumbs/commit/ee62a28))
+* style: fix typo ([0172a29](https://github.com/Scrum/vue-2-breadcrumbs/commit/0172a29))
+* style: update rules for editorconfig ([52a0e3b](https://github.com/Scrum/vue-2-breadcrumbs/commit/52a0e3b))
+* build: update changelog ([61e155b](https://github.com/Scrum/vue-2-breadcrumbs/commit/61e155b))
+* build: update depDev ([d834285](https://github.com/Scrum/vue-2-breadcrumbs/commit/d834285))
+* build: update pkg for build ([a5a636c](https://github.com/Scrum/vue-2-breadcrumbs/commit/a5a636c))
+* feat: pass current route params into breadcrumb function ([8dcf9e2](https://github.com/Scrum/vue-2-breadcrumbs/commit/8dcf9e2))
+* docs: add demo link ([59a545f](https://github.com/Scrum/vue-2-breadcrumbs/commit/59a545f))
+
+
+
 <a name="0.2.4"></a>
 ## <small>0.2.4 (2018-04-21)</small>
 
