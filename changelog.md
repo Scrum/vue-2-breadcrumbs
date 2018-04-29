@@ -15,7 +15,7 @@
 ## <small>0.2.3 (2018-04-14)</small>
 
 * 0.2.3 ([11057b4](https://github.com/Scrum/vue-2-breadcrumbs/commit/11057b4))
-* fix breadcrumbs to populate params in matched routes ([d4097e6](https://github.com/Scrum/vue-2-breadcrumbs/commit/d4097e6))
+* fix: breadcrumbs to populate params in matched routes ([d4097e6](https://github.com/Scrum/vue-2-breadcrumbs/commit/d4097e6))
 * docs: remove window badge ([e930de5](https://github.com/Scrum/vue-2-breadcrumbs/commit/e930de5))
 * build: update changelog ([dc26398](https://github.com/Scrum/vue-2-breadcrumbs/commit/dc26398))
 
