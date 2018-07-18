@@ -1,3 +1,13 @@
+<a name="0.3.1"></a>
+## <small>0.3.1 (2018-07-18)</small>
+
+* 0.3.1 ([6381083](https://github.com/Scrum/vue-2-breadcrumbs/commit/6381083))
+* fix: prepend all breadcrumbs with Home, close #45 ([00e2b1a](https://github.com/Scrum/vue-2-breadcrumbs/commit/00e2b1a)), closes [#45](https://github.com/Scrum/vue-2-breadcrumbs/issues/45)
+* fix: previous crumb link wrong, close #43 ([8e9454e](https://github.com/Scrum/vue-2-breadcrumbs/commit/8e9454e)), closes [#43](https://github.com/Scrum/vue-2-breadcrumbs/issues/43)
+* build: update changelog ([b1d0daa](https://github.com/Scrum/vue-2-breadcrumbs/commit/b1d0daa))
+
+
+
 <a name="0.3.0"></a>
 ## 0.3.0 (2018-04-29)
 

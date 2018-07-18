@@ -3,16 +3,20 @@ export default {
     Object.defineProperties(Vue.prototype, {
       $breadcrumbs: {
         get() {
-          return this.$route.matched.map(r => {
-            let path = '';
-            let route = r;
+          const breadcrumbs = this.$route.matched.map(routeRecord => {
+            let path = routeRecord.path.length ? routeRecord.path : '/';
+            let route = routeRecord;
 
-            Object.keys(this.$route.params).forEach(e => {
-              path = route.path.replace(':' + e, this.$route.params[e]);
+            Object.keys(this.$route.params).forEach(param => {
+              path = route.path.replace(':' + param, this.$route.params[param]);
             }, this);
+
             route.path = path;
+
             return route;
           }, this);
+
+          return breadcrumbs;
         }
       }
     });
@@ -29,7 +33,7 @@ export default {
             <router-link active-class="active" :to="{ path: crumb.path }" :tag="i != $breadcrumbs.length - 1 ? 'a' : 'span'">{{ getBreadcrumb(crumb.meta.breadcrumb) }}</router-link>
           </li>
         </ol>
-        `
+      `
     });
   }
 };
