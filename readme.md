@@ -112,5 +112,17 @@ new Vue({
   `
 }).$mount('#app');
 ```
+## Options
+> An options object can also be passed into the plugin to specify your own template and rendering methods if desired. For example:
 
+```js
+import Vue from 'vue';
+import VueBreadcrumbs from 'vue-2-breadcrumbs';
+
+Vue.use(VueBreadcrumbs, {
+  template: '<nav class="breadcrumb" v-if="$breadcrumbs.length"> ' +
+    '<router-link class="breadcrumb-item" v-for="(crumb, key) in $breadcrumbs" :to="linkProp(crumb)" :key="key">{{ crumb | crumbText }}</router-link> ' +
+    '</nav>'
+});
+```
 
