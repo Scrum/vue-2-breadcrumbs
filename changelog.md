@@ -1,3 +1,14 @@
+<a name="0.4.0"></a>
+## 0.4.0 (2018-07-26)
+
+* 0.4.0 ([7d2a718](https://github.com/Scrum/vue-2-breadcrumbs/commit/7d2a718))
+* docs: add description on options ([80a4279](https://github.com/Scrum/vue-2-breadcrumbs/commit/80a4279))
+* docs: remove license because redundantly ([c4983fc](https://github.com/Scrum/vue-2-breadcrumbs/commit/c4983fc))
+* feat: add options for overwriting default configure close #44 close #47 ([88f3da2](https://github.com/Scrum/vue-2-breadcrumbs/commit/88f3da2)), closes [#44](https://github.com/Scrum/vue-2-breadcrumbs/issues/44) [#47](https://github.com/Scrum/vue-2-breadcrumbs/issues/47)
+* build: update changelog ([82f07ee](https://github.com/Scrum/vue-2-breadcrumbs/commit/82f07ee))
+
+
+
 <a name="0.3.1"></a>
 ## <small>0.3.1 (2018-07-18)</small>
 
