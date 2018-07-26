@@ -1,5 +1,5 @@
 export default {
-  install(Vue) {
+  install(Vue, options) {
     Object.defineProperties(Vue.prototype, {
       $breadcrumbs: {
         get() {
@@ -21,7 +21,7 @@ export default {
       }
     });
 
-    Vue.component('breadcrumbs', {
+    const defaults = {
       methods: {
         getBreadcrumb: function (bc) {
           return typeof bc === 'function' ? bc(this.$route.params) : bc;
@@ -34,6 +34,8 @@ export default {
           </li>
         </ol>
       `
-    });
+    };
+
+    Vue.component('breadcrumbs', Object.assign(defaults, options));
   }
 };
