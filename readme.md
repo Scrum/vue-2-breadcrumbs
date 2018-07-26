@@ -51,87 +51,66 @@ const Foo = {template: '<div><h2>Foo</h2></div>'};
 const Bar = {template: '<div><h2>Bar</h2></div>'};
 
 const router = new VueRouter({
-    routes: [
-        {path: '/', redirect: '/feeds'},
+  routes: [
+    {path: '/', redirect: '/feeds'},
+    {
+      path: '/feeds',
+      component: Feeds,
+      meta: {
+        breadcrumb: 'Feeds'
+      },
+      children: [
         {
-            path: '/feeds',
-            component: Feeds,
-            meta: {
-                breadcrumb: 'Feeds'
-            },
-            children: [
-                {
-                    path: '',
-                    component: Biz
-                },
-                {
-                    path: 'foo',
-                    component: Foo,
-                    meta: {
-                        breadcrumb: () => `foo ${1 + 1}`
-                    }
-                },
-                {
-                    path: 'bar',
-                    component: Bar,
-                    meta: {
-                        breadcrumb: 'bar'
-                    }
-                },
-                {
-                    path: ':id',
-                    component: Feed,
-                    meta: {
-                        breadcrumb: (routeParams) => `Other Feed ${routeParams.id}`
-                    }
-                }
-            ]
+          path: '',
+          component: Biz
+        },
+        {
+          path: 'foo',
+          component: Foo,
+          meta: {
+            breadcrumb: () => `foo ${1 + 1}`
+          }
+        },
+        {
+          path: 'bar',
+          component: Bar,
+          meta: {
+            breadcrumb: 'bar'
+          }
+        },
+        {
+          path: ':id',
+          component: Feed,
+          meta: {
+            breadcrumb: routeParams => `Other Feed ${routeParams.id}`
+          }
         }
-    ]
+      ]
+    }
+  ]
 });
 
 new Vue({
-    router,
-    template: `
-        <div id="app" class="container">
-            <ul class="nav">
-                <li class="nav-item  dropdown">
-                    <router-link to="/feeds" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feeds</router-link>
-                    <div class="dropdown-menu">
-                        <router-link to="/feeds/foo" class="dropdown-item">Foo</router-link>
-                        <router-link to="/feeds/bar" class="dropdown-item">Bar</router-link>
-                        <router-link to="/feeds/1" class="dropdown-item">Other Feed 1</router-link>
-                        <router-link to="/feeds/2" class="dropdown-item">Other Feed 2</router-link>
-                        <router-link to="/feeds/3" class="dropdown-item">Other Feed 3</router-link>
-                    </div>
-                </li>
-            </ul>
-            <breadcrumbs/>
-            <router-view/>
-        </div>
-    `
+  router,
+  template: `
+    <div id="app" class="container">
+      <ul class="nav">
+        <li class="nav-item  dropdown">
+          <router-link to="/feeds" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feeds</router-link>
+          <div class="dropdown-menu">
+            <router-link to="/feeds/foo" class="dropdown-item">Foo</router-link>
+            <router-link to="/feeds/bar" class="dropdown-item">Bar</router-link>
+            <router-link to="/feeds/1" class="dropdown-item">Other Feed 1</router-link>
+            <router-link to="/feeds/2" class="dropdown-item">Other Feed 2</router-link>
+            <router-link to="/feeds/3" class="dropdown-item">Other Feed 3</router-link>
+          </div>
+        </li>
+      </ul>
+      <breadcrumbs/>
+      <router-view/>
+    </div>
+  `
 }).$mount('#app');
 ```
-## License
 
-> MIT License (MIT)
 
-> Copyright (c) Ivan Demidov <scrum@list.ru>
-
-> Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-> The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
