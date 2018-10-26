@@ -120,9 +120,14 @@ import Vue from 'vue';
 import VueBreadcrumbs from 'vue-2-breadcrumbs';
 
 Vue.use(VueBreadcrumbs, {
-  template: '<nav class="breadcrumb" v-if="$breadcrumbs.length"> ' +
-    '<router-link class="breadcrumb-item" v-for="(crumb, key) in $breadcrumbs" :to="linkProp(crumb)" :key="key">{{ crumb | crumbText }}</router-link> ' +
-    '</nav>'
+        template:
+          '        <nav v-if="$breadcrumbs.length" aria-label="breadcrumb">\n' +
+          '            <ol class="breadcrumb">\n' +
+          '                <li v-for="(crumb, key) in $breadcrumbs" v-if="crumb.meta.breadcrumb" :key="key" class="breadcrumb-item active" aria-current="page">\n' +
+          '                    <router-link :to="{ path: crumb.path }">{{ getBreadcrumb(crumb.meta.breadcrumb) }}</router-link>' +
+          "                </li>\n" +
+          "            </ol>\n" +
+          "        </nav>"
 });
 ```
 
