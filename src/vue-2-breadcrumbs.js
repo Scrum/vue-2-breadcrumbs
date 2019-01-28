@@ -8,7 +8,7 @@ export default {
             let route = routeRecord;
 
             Object.keys(this.$route.params).forEach(param => {
-              path = route.path.replace(':' + param, this.$route.params[param]);
+              path = path.replace(':' + param, this.$route.params[param]);
             }, this);
 
             route.path = path;
