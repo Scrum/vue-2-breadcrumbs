@@ -1,6 +1,6 @@
 {
   "name": "vue-2-breadcrumbs",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Breadcrumbs for Vue.js 2.0",
   "license": "MIT",
   "repository": "Scrum/vue-2-breadcrumbs",
@@ -12,13 +12,12 @@
     "url": "https://twitter.com/Scrum_"
   },
   "main": "lib/vue-2-breadcrumbs.js",
+  "browser": "lib/vue-2-breadcrumbs.js",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
-    "precommit": "clinton && lint-staged",
-    "commitmsg": "commitlint --extends=@commitlint/config-angular -e",
-    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
+    "version": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
     "prepare": "npm run build",
     "build": "rimraf lib && babel src -d lib",
     "test": "echo issue #3"
@@ -56,12 +55,18 @@
     "lint-staged": "^8.1.1",
     "rimraf": "^2.6.3"
   },
-  "browser": "lib/vue-2-breadcrumbs.js",
-  "unpkg": "lib/vue-2-breadcrumbs.js",
-  "style": "lib/vue-2-breadcrumbs.css",
   "lint-staged": {
     "{src,test}/**/*.{js,html,htm}": "eslint",
     "*.md": "eslint"
+  },
+  "unpkg": "lib/vue-2-breadcrumbs.js",
+  "style": "lib/vue-2-breadcrumbs.css",
+  "husky": {
+    "hooks": {
+      "pre-push": "npm t",
+      "pre-commit": "clinton && lint-staged",
+      "commit-msg": "commitlint --extends=@commitlint/config-angular -e"
+    }
   },
   "ava": {
     "require": [

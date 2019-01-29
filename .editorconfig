@@ -11,6 +11,9 @@ insert_final_newline = true
 [*.{json,yml,jade,pss,css,html,js}]
 indent_size = 2
 
+[changelog.md]
+insert_final_newline = false
+
 [*.html]
 insert_final_newline = false
 
