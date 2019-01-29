@@ -1,5 +1,5 @@
 # <a href="https://vuejs.org" target="_blank"><img valign="text-bottom" height="49" src="https://vuejs.org/images/logo.png"></a> breadcrumbs 
- > Vue breadcrumbs builds on the official [vue-router](https://github.com/vuejs/vue-router) package to provide simple breadcrumbs. [Demo](http://inside-demo.github.io/vue-demo/#/feeds)
+> Vue breadcrumbs builds on the official [vue-router](https://github.com/vuejs/vue-router) package to provide simple breadcrumbs. [Demo](http://inside-demo.github.io/vue-demo/#/feeds)
 
 [![Travis Build Status](https://img.shields.io/travis/GitScrum/vue-2-breadcrumbs/master.svg?style=flat-square&label=unix)](https://travis-ci.org/GitScrum/vue-2-breadcrumbs)[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg?style=flat-square)](https://vuejs.org/)[![node](https://img.shields.io/node/v/post-sequence.svg?maxAge=2592000&style=flat-square)]()[![npm version](https://img.shields.io/npm/v/vue-2-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/vue-2-breadcrumbs)[![Dependency Status](https://david-dm.org/gitscrum/vue-2-breadcrumbs.svg?style=flat-square)](https://david-dm.org/gitscrum/vue-2-breadcrumbs)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)[![Coveralls status](https://img.shields.io/coveralls/GitScrum/vue-2-breadcrumbs.svg?style=flat-square)](https://coveralls.io/r/GitScrum/vue-2-breadcrumbs)
 
@@ -94,22 +94,22 @@ new Vue({
   router,
   template: `
     <div id="app" class="container">
-      <ul class="nav">
-        <li class="nav-item  dropdown">
-          <router-link to="/feeds" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feeds</router-link>
-          <div class="dropdown-menu">
-            <router-link to="/feeds/foo" class="dropdown-item">Foo</router-link>
-            <router-link to="/feeds/bar" class="dropdown-item">Bar</router-link>
-            <router-link to="/feeds/1" class="dropdown-item">Other Feed 1</router-link>
-            <router-link to="/feeds/2" class="dropdown-item">Other Feed 2</router-link>
-            <router-link to="/feeds/3" class="dropdown-item">Other Feed 3</router-link>
-          </div>
-        </li>
-      </ul>
-      <breadcrumbs/>
-      <router-view/>
+        <ul class="nav">
+            <li class="nav-item  dropdown">
+                <router-link to="/feeds" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feeds</router-link>
+                <div class="dropdown-menu">
+                    <router-link to="/feeds/foo" class="dropdown-item">Foo</router-link>
+                    <router-link to="/feeds/bar" class="dropdown-item">Bar</router-link>
+                    <router-link to="/feeds/1" class="dropdown-item">Other Feed 1</router-link>
+                    <router-link to="/feeds/2" class="dropdown-item">Other Feed 2</router-link>
+                    <router-link to="/feeds/3" class="dropdown-item">Other Feed 3</router-link>
+                </div>
+            </li>
+        </ul>
+        <breadcrumbs/>
+        <router-view/>
     </div>
-  `
+`
 }).$mount('#app');
 ```
 ## Options
@@ -120,14 +120,13 @@ import Vue from 'vue';
 import VueBreadcrumbs from 'vue-2-breadcrumbs';
 
 Vue.use(VueBreadcrumbs, {
-        template:
-          '        <nav v-if="$breadcrumbs.length" aria-label="breadcrumb">\n' +
-          '            <ol class="breadcrumb">\n' +
-          '                <li v-for="(crumb, key) in $breadcrumbs" v-if="crumb.meta.breadcrumb" :key="key" class="breadcrumb-item active" aria-current="page">\n' +
-          '                    <router-link :to="{ path: crumb.path }">{{ getBreadcrumb(crumb.meta.breadcrumb) }}</router-link>' +
-          "                </li>\n" +
-          "            </ol>\n" +
-          "        </nav>"
+  template:
+    '        <nav v-if="$breadcrumbs.length" aria-label="breadcrumb">\n' +
+    '            <ol class="breadcrumb">\n' +
+    '                <li v-for="(crumb, key) in $breadcrumbs" v-if="crumb.meta.breadcrumb" :key="key" class="breadcrumb-item active" aria-current="page">\n' +
+    '                    <router-link :to="{ path: crumb.path }">{{ getBreadcrumb(crumb.meta.breadcrumb) }}</router-link>' +
+    '                </li>\n' +
+    '            </ol>\n' +
+    '        </nav>'
 });
 ```
-
