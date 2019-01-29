@@ -1,4 +1,14 @@
-<a name="0.4.0"></a>
+## <small>0.4.2 (2019-01-29)</small>
+
+* fix: build scripts ([5ce1433](https://github.com/Scrum/vue-2-breadcrumbs/commit/5ce1433))
+* fix: fix replace params ([cf15658](https://github.com/Scrum/vue-2-breadcrumbs/commit/cf15658))
+* fix: uri to homepage ([8b02004](https://github.com/Scrum/vue-2-breadcrumbs/commit/8b02004))
+* build: bundle ([41d695a](https://github.com/Scrum/vue-2-breadcrumbs/commit/41d695a))
+* build: update changelog ([d8853a3](https://github.com/Scrum/vue-2-breadcrumbs/commit/d8853a3))
+* Update readme.md ([b1556eb](https://github.com/Scrum/vue-2-breadcrumbs/commit/b1556eb))
+
+
+
 ## 0.4.0 (2018-07-26)
 
 * 0.4.0 ([7d2a718](https://github.com/Scrum/vue-2-breadcrumbs/commit/7d2a718))
@@ -9,7 +19,6 @@
 
 
 
-<a name="0.3.1"></a>
 ## <small>0.3.1 (2018-07-18)</small>
 
 * 0.3.1 ([6381083](https://github.com/Scrum/vue-2-breadcrumbs/commit/6381083))
@@ -19,7 +28,6 @@
 
 
 
-<a name="0.3.0"></a>
 ## 0.3.0 (2018-04-29)
 
 * 0.3.0 ([5160ffb](https://github.com/Scrum/vue-2-breadcrumbs/commit/5160ffb))
@@ -34,7 +42,6 @@
 
 
 
-<a name="0.2.4"></a>
 ## <small>0.2.4 (2018-04-21)</small>
 
 * 0.2.4 ([4e971cf](https://github.com/Scrum/vue-2-breadcrumbs/commit/4e971cf))
@@ -47,7 +54,6 @@
 
 
 
-<a name="0.2.3"></a>
 ## <small>0.2.3 (2018-04-14)</small>
 
 * 0.2.3 ([11057b4](https://github.com/Scrum/vue-2-breadcrumbs/commit/11057b4))
@@ -57,7 +63,6 @@
 
 
 
-<a name="0.2.2"></a>
 ## <small>0.2.2 (2018-01-29)</small>
 
 * 0.2.2 ([ae8c449](https://github.com/Scrum/vue-2-breadcrumbs/commit/ae8c449))
@@ -66,7 +71,6 @@
 
 
 
-<a name="0.1.3"></a>
 ## <small>0.1.3 (2018-01-29)</small>
 
 * 0.1.3 ([5e2c102](https://github.com/Scrum/vue-2-breadcrumbs/commit/5e2c102))
@@ -94,7 +98,6 @@
 
 
 
-<a name="0.1.2"></a>
 ## <small>0.1.2 (2017-08-11)</small>
 
 * 0.1.2 ([9537f7e](https://github.com/Scrum/vue-2-breadcrumbs/commit/9537f7e))
@@ -122,7 +125,6 @@
 
 
 
-<a name="0.1.1"></a>
 ## <small>0.1.1 (2017-03-30)</small>
 
 * 0.1.1 ([df9e233](https://github.com/Scrum/vue-2-breadcrumbs/commit/df9e233))
@@ -132,7 +134,6 @@
 
 
 
-<a name="0.1.0"></a>
 ## 0.1.0 (2017-03-29)
 
 * 0.1.0 ([dfcadec](https://github.com/Scrum/vue-2-breadcrumbs/commit/dfcadec))
@@ -144,7 +145,6 @@
 
 
 
-<a name="0.0.1"></a>
 ## <small>0.0.1 (2017-03-28)</small>
 
 * 0.0.1 ([d3dd94c](https://github.com/Scrum/vue-2-breadcrumbs/commit/d3dd94c))
