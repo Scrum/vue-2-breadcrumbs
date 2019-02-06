@@ -4,7 +4,7 @@ export default {
       $breadcrumbs: {
         get() {
           const breadcrumbs = this.$route.matched.map(routeRecord => {
-            let path = routeRecord.path.length ? routeRecord.path : '/';
+            let path = routeRecord.path.length > 0 ? routeRecord.path : '/';
             let route = routeRecord;
 
             Object.keys(this.$route.params).forEach(param => {
@@ -24,7 +24,7 @@ export default {
     const defaults = {
       methods: {
         getBreadcrumb: function (bc) {
-          return typeof bc === 'function' ? bc(this.$route.params) : bc;
+          return typeof bc === 'function' ? bc.call(this, this.$route.params) : bc;
         }
       },
       template: `

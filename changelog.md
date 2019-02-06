@@ -1,11 +1,21 @@
+## 0.5.0 (2019-02-06)
+
+* docs: add example witch context ([ea60887](https://github.com/Scrum/vue-2-breadcrumbs/commit/ea60887))
+* feat: add context for callback, close #53 ([c6b838e](https://github.com/Scrum/vue-2-breadcrumbs/commit/c6b838e)), closes [#53](https://github.com/Scrum/vue-2-breadcrumbs/issues/53)
+* build: update dep dev ([1ee3913](https://github.com/Scrum/vue-2-breadcrumbs/commit/1ee3913))
+
+
+
 ## <small>0.4.2 (2019-01-29)</small>
 
+* 0.4.2 ([bedf7fe](https://github.com/Scrum/vue-2-breadcrumbs/commit/bedf7fe))
+* Update readme.md ([b1556eb](https://github.com/Scrum/vue-2-breadcrumbs/commit/b1556eb))
+* build: bundle ([41d695a](https://github.com/Scrum/vue-2-breadcrumbs/commit/41d695a))
+* build: update changelog ([3e4dc36](https://github.com/Scrum/vue-2-breadcrumbs/commit/3e4dc36))
+* build: update changelog ([d8853a3](https://github.com/Scrum/vue-2-breadcrumbs/commit/d8853a3))
 * fix: build scripts ([5ce1433](https://github.com/Scrum/vue-2-breadcrumbs/commit/5ce1433))
 * fix: fix replace params ([cf15658](https://github.com/Scrum/vue-2-breadcrumbs/commit/cf15658))
 * fix: uri to homepage ([8b02004](https://github.com/Scrum/vue-2-breadcrumbs/commit/8b02004))
-* build: bundle ([41d695a](https://github.com/Scrum/vue-2-breadcrumbs/commit/41d695a))
-* build: update changelog ([d8853a3](https://github.com/Scrum/vue-2-breadcrumbs/commit/d8853a3))
-* Update readme.md ([b1556eb](https://github.com/Scrum/vue-2-breadcrumbs/commit/b1556eb))
 
 
 
