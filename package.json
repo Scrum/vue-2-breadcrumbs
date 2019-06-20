@@ -79,7 +79,7 @@
         "@babel/preset-env",
         {
           "targets": {
-            "node": 4
+            "ie": 11
           },
           "modules": "umd"
         }
