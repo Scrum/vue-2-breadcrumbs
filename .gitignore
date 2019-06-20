@@ -6,4 +6,3 @@ _gh-pages
 .publish
 *.sublime*
 coverage
-docs/src
