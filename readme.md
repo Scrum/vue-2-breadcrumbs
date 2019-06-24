@@ -1,7 +1,7 @@
 # <a href="https://vuejs.org" target="_blank"><img valign="text-bottom" height="49" src="https://vuejs.org/images/logo.png"></a> breadcrumbs 
 > Vue breadcrumbs builds on the official [vue-router](https://github.com/vuejs/vue-router) package to provide simple breadcrumbs. [Demo](http://inside-demo.github.io/vue-demo/#/feeds)
 
-[![Travis Build Status](https://img.shields.io/travis/GitScrum/vue-2-breadcrumbs/master.svg?style=flat-square&label=unix)](https://travis-ci.org/GitScrum/vue-2-breadcrumbs)[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg?style=flat-square)](https://vuejs.org/)[![node](https://img.shields.io/node/v/post-sequence.svg?maxAge=2592000&style=flat-square)]()[![npm version](https://img.shields.io/npm/v/vue-2-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/vue-2-breadcrumbs)[![Dependency Status](https://david-dm.org/gitscrum/vue-2-breadcrumbs.svg?style=flat-square)](https://david-dm.org/gitscrum/vue-2-breadcrumbs)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)[![Coveralls status](https://img.shields.io/coveralls/GitScrum/vue-2-breadcrumbs.svg?style=flat-square)](https://coveralls.io/r/GitScrum/vue-2-breadcrumbs)
+[![Travis Build Status](https://img.shields.io/travis/GitScrum/vue-2-breadcrumbs/master.svg?style=flat-square&label=unix)](https://travis-ci.org/GitScrum/vue-2-breadcrumbs)[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg?style=flat-square)](https://vuejs.org/)[![node](https://img.shields.io/node/v/post-sequence.svg?style=flat-square)]()[![npm version](https://img.shields.io/npm/v/vue-2-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/vue-2-breadcrumbs)[![Dependency Status](https://david-dm.org/gitscrum/vue-2-breadcrumbs.svg?style=flat-square)](https://david-dm.org/gitscrum/vue-2-breadcrumbs)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)[![Coveralls status](https://img.shields.io/coveralls/GitScrum/vue-2-breadcrumbs.svg?style=flat-square)](https://coveralls.io/r/GitScrum/vue-2-breadcrumbs)
 
 [![npm downloads](https://img.shields.io/npm/dm/vue-2-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/vue-2-breadcrumbs)[![npm](https://img.shields.io/npm/dt/vue-2-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/vue-2-breadcrumbs)
 
@@ -11,7 +11,7 @@
 $ npm install vue-2-breadcrumbs
 ```
 
-> **Note:** This project is compatible with node v4+
+> **Note:** This project is compatible with node v8+
 
 
 ## Usage
@@ -27,12 +27,12 @@ Vue.use(Breabcrumbs);
 ### Browser
 
 ```html
-<!-- Include after Vue -->
-<!-- Local files -->
-<script src="vue-2-breadcrumbs/dist/vue-2-breadcrumbs.js"></script>
-
-<!-- From CDN -->
-<script src="https://unpkg.com/vue-2-breadcrumbs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-2-breadcrumbs/dist/vue-2-breadcrumbs.min.js"></script>
+<script>
+// As a plugin
+Vue.use(VueBreadcrumbs.VueBreadcrumbsPlugin);
+</script>
 ```
 
 ## Example  
@@ -50,6 +50,7 @@ const Biz = {template: '<div><h2>Biz</h2></div>'};
 const Foo = {template: '<div><h2>Foo</h2></div>'};
 const Bar = {template: '<div><h2>Bar</h2></div>'};
 const Baz = {template: '<div><h2>Baz</h2></div>'};
+const View = {template: '<div><h2>{{ $route.params }}</h2></div>'};
 
 const router = new VueRouter({
   routes: [
@@ -95,7 +96,18 @@ const router = new VueRouter({
           component: Feed,
           meta: {
             breadcrumb: routeParams => `Other Feed ${routeParams.id}`
-          }
+          },
+          redirect: {
+            name: 'view'
+          },
+          children: [{
+            path: 'view',
+            name: 'view',
+            component: View,
+            meta: {
+              breadcrumb: 'View'
+            }
+          }]
         }
       ]
     }
@@ -137,7 +149,7 @@ Vue.use(VueBreadcrumbs, {
     '        <nav v-if="$breadcrumbs.length" aria-label="breadcrumb">\n' +
     '            <ol class="breadcrumb">\n' +
     '                <li v-for="(crumb, key) in $breadcrumbs" v-if="crumb.meta.breadcrumb" :key="key" class="breadcrumb-item active" aria-current="page">\n' +
-    '                    <router-link :to="{ path: crumb.path }">{{ getBreadcrumb(crumb.meta.breadcrumb) }}</router-link>' +
+    '                    <router-link :to="{ path: getPath(crumb) }">{{ getBreadcrumb(crumb.meta.breadcrumb) }}</router-link>' +
     '                </li>\n' +
     '            </ol>\n' +
     '        </nav>'

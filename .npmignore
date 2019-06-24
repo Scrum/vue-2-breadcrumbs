@@ -5,4 +5,5 @@ src
 coverage
 .nyc_output
 npm-debug.log
-*.sublime*
+docs
+dist

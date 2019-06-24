@@ -1,8 +1,35 @@
+## <small>0.5.1 (2019-06-24)</small>
+
+* build: add src docs ignore ([4b01ff8](https://github.com/Scrum/vue-2-breadcrumbs/commit/4b01ff8))
+* build: bundle ([793cdd6](https://github.com/Scrum/vue-2-breadcrumbs/commit/793cdd6))
+* build: bundle ([ec0329a](https://github.com/Scrum/vue-2-breadcrumbs/commit/ec0329a))
+* build: change main file ([2152ae6](https://github.com/Scrum/vue-2-breadcrumbs/commit/2152ae6))
+* build: change to new build system ([5d36e13](https://github.com/Scrum/vue-2-breadcrumbs/commit/5d36e13))
+* build: enabled terser ([be9cc26](https://github.com/Scrum/vue-2-breadcrumbs/commit/be9cc26))
+* build: made configs from package ([6ffae4e](https://github.com/Scrum/vue-2-breadcrumbs/commit/6ffae4e))
+* build(deps): bump extend from 3.0.1 to 3.0.2 ([ad66243](https://github.com/Scrum/vue-2-breadcrumbs/commit/ad66243))
+* build(deps): bump handlebars from 4.0.12 to 4.1.2 ([ba83f42](https://github.com/Scrum/vue-2-breadcrumbs/commit/ba83f42))
+* build(deps): bump js-yaml from 3.9.1 to 3.13.1 ([2891c3c](https://github.com/Scrum/vue-2-breadcrumbs/commit/2891c3c))
+* build(deps): bump lodash from 4.17.4 to 4.17.11 ([7133b08](https://github.com/Scrum/vue-2-breadcrumbs/commit/7133b08))
+* docs: add demo page ([20ad120](https://github.com/Scrum/vue-2-breadcrumbs/commit/20ad120))
+* docs: small update ([1b93d4d](https://github.com/Scrum/vue-2-breadcrumbs/commit/1b93d4d))
+* docs: update breadcrumbs name ([dcefeb2](https://github.com/Scrum/vue-2-breadcrumbs/commit/dcefeb2))
+* fix: error on ie 11, close #49 ([36a5638](https://github.com/Scrum/vue-2-breadcrumbs/commit/36a5638)), closes [#49](https://github.com/Scrum/vue-2-breadcrumbs/issues/49)
+* fix: named routes close #55 ([cd41adc](https://github.com/Scrum/vue-2-breadcrumbs/commit/cd41adc)), closes [#55](https://github.com/Scrum/vue-2-breadcrumbs/issues/55)
+* ci: drop support old node ([ddf9248](https://github.com/Scrum/vue-2-breadcrumbs/commit/ddf9248))
+* refactor: small ) ([a13100f](https://github.com/Scrum/vue-2-breadcrumbs/commit/a13100f))
+* perf: add dist for browser ([e48e129](https://github.com/Scrum/vue-2-breadcrumbs/commit/e48e129))
+* test: add simple test, close #3 ([56ecd05](https://github.com/Scrum/vue-2-breadcrumbs/commit/56ecd05)), closes [#3](https://github.com/Scrum/vue-2-breadcrumbs/issues/3)
+
+
+
 ## 0.5.0 (2019-02-06)
 
+* 0.5.0 ([ddd02ca](https://github.com/Scrum/vue-2-breadcrumbs/commit/ddd02ca))
+* build: update changelog ([1fd3901](https://github.com/Scrum/vue-2-breadcrumbs/commit/1fd3901))
+* build: update dep dev ([1ee3913](https://github.com/Scrum/vue-2-breadcrumbs/commit/1ee3913))
 * docs: add example witch context ([ea60887](https://github.com/Scrum/vue-2-breadcrumbs/commit/ea60887))
 * feat: add context for callback, close #53 ([c6b838e](https://github.com/Scrum/vue-2-breadcrumbs/commit/c6b838e)), closes [#53](https://github.com/Scrum/vue-2-breadcrumbs/issues/53)
-* build: update dep dev ([1ee3913](https://github.com/Scrum/vue-2-breadcrumbs/commit/1ee3913))
 
 
 

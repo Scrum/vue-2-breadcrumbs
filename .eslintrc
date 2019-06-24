@@ -1,0 +1,31 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaVersion": 10
+    },
+    "plugins": [
+        "prettier",
+        "dependencies",
+        "html",
+        "unicorn",
+        "babel",
+        "markdown"
+    ],
+    "extends": [
+        "plugin:vue/recommended",
+        "plugin:ava/recommended",
+        "plugin:unicorn/recommended",
+        "xo",
+        "xo-space"
+    ],
+    "rules": {
+        "vue/no-use-v-if-with-v-for": "off",
+        "no-new": "off",
+        "capitalized-comments": "off"
+    }
+}
