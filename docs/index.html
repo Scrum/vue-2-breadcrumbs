@@ -7,9 +7,9 @@
   <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://unpkg.com/bootstrap@4.2.1/dist/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/vue@2.6.10/dist/vue.min.js"></script>
   <script src="https://unpkg.com/vue-router@3.0.6/dist/vue-router.min.js"></script>
-  <script src="vue-breadcrumbs.min.js"></script>
+  <script src="vue-2-breadcrumbs.min.js"></script>
 </head>
 <body>
   <div id="app">
@@ -23,6 +23,11 @@
                 <router-link to="/feeds/1" class="dropdown-item">Other Feed 1</router-link>
                 <router-link to="/feeds/2" class="dropdown-item">Other Feed 2</router-link>
                 <router-link to="/feeds/3" class="dropdown-item">Other Feed 3</router-link>
+            </div>
+        </li>
+        <li class="nav-item  dropdown">
+            <router-link to="/" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</router-link>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <router-link :to="{ name: 'settings'}" class="dropdown-item">Settings</router-link>
             </div>
         </li>
@@ -84,7 +89,7 @@
             children: [{
                 path: 'entities/:entityName',
                 name: 'entities',
-                component: { template: `<router-view :key="$route.fullPath"/>` },
+                component: { template: `<router-view/>` },
                 redirect: {
                   name: 'entityView'
                 },
@@ -108,50 +113,63 @@
       },
 
       {
-            path: '/feeds',
-            component: Feeds,
-            meta: {
-                breadcrumb: 'Feeds'
-            },
-            children: [
-                {
-                    path: '',
-                    component: Biz
-                },
-                {
-                    path: 'foo',
-                    component: Foo,
-                    meta: {
-                        breadcrumb: () => `foo ${1 + 1}`
+          path: '/feeds',
+          component: Feeds,
+          meta: {
+              breadcrumb: 'Feeds'
+          },
+          children: [
+              {
+                  path: '',
+                  component: Biz
+              },
+              {
+                  path: 'foo',
+                  component: Foo,
+                  meta: {
+                      breadcrumb: () => `foo ${1 + 1}`
+                  }
+              },
+              {
+                  path: 'bar',
+                  component: Bar,
+                  meta: {
+                      breadcrumb: 'bar'
+                  }
+              },
+              {
+                  name: 'baz',
+                  path: 'baz',
+                  component: Baz,
+                  meta: {
+                      breadcrumb() {
+                          const { name } = this.$route;
+                          return `name "${name}" of context route`;
+                      }
+                  }
+              },
+              {
+                  path: ':id',
+                  component: Feed,
+                  meta: {
+                      breadcrumb: params => `Other Feed ${params.id}`
+                  },
+                  redirect: {
+                    name: 'view'
+                  },
+                  children: [
+                    {
+                      path: 'view',
+                      name: 'view',
+                      component: View,
+                      meta: {
+                        breadcrumb: 'View'
+                      }
                     }
-                },
-                {
-                    path: 'bar',
-                    component: Bar,
-                    meta: {
-                        breadcrumb: 'bar'
-                    }
-                },
-                {
-                    name: 'baz',
-                    path: 'baz',
-                    component: Baz,
-                    meta: {
-                        breadcrumb: function () {
-                            const { name } = this.$route;
-                            return `name "${name}" of context route`;
-                        }
-                    }
-                },
-                {
-                    path: ':id',
-                    component: Feed,
-                    meta: {
-                        breadcrumb: params => `Other Feed ${params.id}`
-                    }
-                }
-            ]
-          }
+                  ]
+              }
+          ]
+        }
     ]
 
     Vue.use(VueBreadcrumbs.VueBreadcrumbsPlugin);
