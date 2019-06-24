@@ -27,12 +27,12 @@ Vue.use(Breabcrumbs);
 ### Browser
 
 ```html
-<!-- Include after Vue -->
-<!-- Local files -->
-<script src="vue-2-breadcrumbs/dist/vue-2-breadcrumbs.js"></script>
-
-<!-- From CDN -->
-<script src="https://unpkg.com/vue-2-breadcrumbs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-2-breadcrumbs/dist/vue-2-breadcrumbs.min.js"></script>
+<script>
+// As a plugin
+Vue.use(VueBreadcrumbs.VueBreadcrumbsPlugin);
+</script>
 ```
 
 ## Example  
@@ -50,6 +50,7 @@ const Biz = {template: '<div><h2>Biz</h2></div>'};
 const Foo = {template: '<div><h2>Foo</h2></div>'};
 const Bar = {template: '<div><h2>Bar</h2></div>'};
 const Baz = {template: '<div><h2>Baz</h2></div>'};
+const View = {template: '<div><h2>{{ $route.params }}</h2></div>'};
 
 const router = new VueRouter({
   routes: [
@@ -95,7 +96,18 @@ const router = new VueRouter({
           component: Feed,
           meta: {
             breadcrumb: routeParams => `Other Feed ${routeParams.id}`
-          }
+          },
+          redirect: {
+            name: 'view'
+          },
+          children: [{
+            path: 'view',
+            name: 'view',
+            component: View,
+            meta: {
+              breadcrumb: 'View'
+            }
+          }]
         }
       ]
     }
@@ -137,7 +149,7 @@ Vue.use(VueBreadcrumbs, {
     '        <nav v-if="$breadcrumbs.length" aria-label="breadcrumb">\n' +
     '            <ol class="breadcrumb">\n' +
     '                <li v-for="(crumb, key) in $breadcrumbs" v-if="crumb.meta.breadcrumb" :key="key" class="breadcrumb-item active" aria-current="page">\n' +
-    '                    <router-link :to="{ path: crumb.path }">{{ getBreadcrumb(crumb.meta.breadcrumb) }}</router-link>' +
+    '                    <router-link :to="{ path: getPath(crumb) }">{{ getBreadcrumb(crumb.meta.breadcrumb) }}</router-link>' +
     '                </li>\n' +
     '            </ol>\n' +
     '        </nav>'
