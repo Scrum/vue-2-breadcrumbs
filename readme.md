@@ -19,9 +19,9 @@ $ npm install vue-2-breadcrumbs
 ### Bundler (Webpack, Rollup)
 ```js
 import Vue from 'vue';
-import Breabcrumbs from 'vue-2-breadcrumbs';
+import VueBreadcrumbs from 'vue-2-breadcrumbs';
 
-Vue.use(Breabcrumbs);
+Vue.use(VueBreadcrumbs);
 ```
 
 ### Browser
