@@ -1,0 +1,14 @@
+{
+  "ignores": [
+    "test/**",
+    "tmp/**",
+    "lib/**",
+    "dist/**",
+    "docs/**",
+    "*.{html,jpg}"
+  ],
+  "rules": {
+    "pkg-main": "off",
+    "xo": "off"
+  }
+}

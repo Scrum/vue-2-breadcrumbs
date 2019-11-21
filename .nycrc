@@ -1,0 +1,6 @@
+{
+  "nyc": {
+    "reporter": ["lcov", "text-summary"],
+    "extension": [".js", ".vue"]
+  }
+}

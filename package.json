@@ -80,45 +80,6 @@
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm t",
-      "pre-commit": "clinton && lint-staged",
-      "commit-msg": "commitlint --extends=@commitlint/config-angular -e"
-    }
-  },
-  "lint-staged": {
-    "{src,test}/*.js": "eslint",
-    "*.md": "eslint"
-  },
-  "ava": {
-    "files": [
-      "test/test-*.js"
-    ],
-    "require": [
-      "./test/helpers/setup.js"
-    ]
-  },
-  "nyc": {
-    "extension": [
-      ".js",
-      ".vue"
-    ]
-  },
-  "clinton": {
-    "ignores": [
-      "test/**",
-      "tmp/**",
-      "lib/**",
-      "dist/**",
-      "docs/**",
-      "*.{html,jpg}"
-    ],
-    "rules": {
-      "pkg-main": "off",
-      "xo": "off"
-    }
-  },
   "funding": {
     "type": "patreon",
     "url": "https://patreon.com/scrums"
