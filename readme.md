@@ -95,7 +95,7 @@ const router = new VueRouter({
           path: ':id',
           component: Feed,
           meta: {
-            breadcrumb: routeParams => `Other Feed ${routeParams.id}`
+            breadcrumb: routeParameters => `Other Feed ${routeParameters.id}`
           },
           redirect: {
             name: 'view'
