@@ -118,5 +118,9 @@
       "pkg-main": "off",
       "xo": "off"
     }
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://patreon.com/scrums"
   }
 }
