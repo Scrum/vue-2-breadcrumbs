@@ -8,13 +8,10 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.{json,yml,jade,pss,css,html,js}]
+[{package.json,*.yml,*.jade,*.pss,*.css,*.js,*.md,.*}]
 indent_size = 2
 
-[changelog.md]
-insert_final_newline = false
-
-[*.html]
+[{changelog.md,.*}]
 insert_final_newline = false
 
 [*.md]

@@ -1,5 +1,23 @@
+## <small>0.5.2 (2019-11-21)</small>
+
+* build: add funding field for npm ([559a05f](https://github.com/Scrum/vue-2-breadcrumbs/commit/559a05f))
+* build: bundle ([93b2425](https://github.com/Scrum/vue-2-breadcrumbs/commit/93b2425))
+* build: move config to file ([cd39a59](https://github.com/Scrum/vue-2-breadcrumbs/commit/cd39a59))
+* build: update depdev ([dafef7f](https://github.com/Scrum/vue-2-breadcrumbs/commit/dafef7f))
+* build(deps): bump eslint-utils from 1.3.1 to 1.4.2 ([b79f3f1](https://github.com/Scrum/vue-2-breadcrumbs/commit/b79f3f1))
+* build(deps): bump lodash.template from 4.4.0 to 4.5.0 ([dd6f8f0](https://github.com/Scrum/vue-2-breadcrumbs/commit/dd6f8f0))
+* build(deps): bump mixin-deep from 1.3.1 to 1.3.2 ([4fb7e9a](https://github.com/Scrum/vue-2-breadcrumbs/commit/4fb7e9a))
+* docs: change url to demo page ([f14fa5f](https://github.com/Scrum/vue-2-breadcrumbs/commit/f14fa5f))
+* docs: fix badges ([0905dae](https://github.com/Scrum/vue-2-breadcrumbs/commit/0905dae))
+* docs: perf usege, close #63 ([dd9d373](https://github.com/Scrum/vue-2-breadcrumbs/commit/dd9d373)), closes [#63](https://github.com/Scrum/vue-2-breadcrumbs/issues/63)
+* docs: prettier arg ([27673fc](https://github.com/Scrum/vue-2-breadcrumbs/commit/27673fc))
+* Create funding.yml ([ebd846f](https://github.com/Scrum/vue-2-breadcrumbs/commit/ebd846f))
+
+
+
 ## <small>0.5.1 (2019-06-24)</small>
 
+* 0.5.1 ([bdb0261](https://github.com/Scrum/vue-2-breadcrumbs/commit/bdb0261))
 * build: add src docs ignore ([4b01ff8](https://github.com/Scrum/vue-2-breadcrumbs/commit/4b01ff8))
 * build: bundle ([793cdd6](https://github.com/Scrum/vue-2-breadcrumbs/commit/793cdd6))
 * build: bundle ([ec0329a](https://github.com/Scrum/vue-2-breadcrumbs/commit/ec0329a))
@@ -7,6 +25,7 @@
 * build: change to new build system ([5d36e13](https://github.com/Scrum/vue-2-breadcrumbs/commit/5d36e13))
 * build: enabled terser ([be9cc26](https://github.com/Scrum/vue-2-breadcrumbs/commit/be9cc26))
 * build: made configs from package ([6ffae4e](https://github.com/Scrum/vue-2-breadcrumbs/commit/6ffae4e))
+* build: update changelog ([07ab03f](https://github.com/Scrum/vue-2-breadcrumbs/commit/07ab03f))
 * build(deps): bump extend from 3.0.1 to 3.0.2 ([ad66243](https://github.com/Scrum/vue-2-breadcrumbs/commit/ad66243))
 * build(deps): bump handlebars from 4.0.12 to 4.1.2 ([ba83f42](https://github.com/Scrum/vue-2-breadcrumbs/commit/ba83f42))
 * build(deps): bump js-yaml from 3.9.1 to 3.13.1 ([2891c3c](https://github.com/Scrum/vue-2-breadcrumbs/commit/2891c3c))
