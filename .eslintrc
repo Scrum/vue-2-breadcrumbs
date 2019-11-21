@@ -10,7 +10,6 @@
     },
     "plugins": [
         "prettier",
-        "dependencies",
         "html",
         "unicorn",
         "babel",
