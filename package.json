@@ -15,7 +15,7 @@
   "module": "lib/vue-2-breadcrumbs.esm.js",
   "browser": "lib/vue-2-breadcrumbs.umd.js",
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "scripts": {
     "install": "npm install --prefix src/docs",

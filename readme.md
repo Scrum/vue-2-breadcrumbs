@@ -11,7 +11,7 @@
 $ npm install vue-2-breadcrumbs
 ```
 
-> **Note:** This project is compatible with node v8+
+> **Note:** This project is compatible with node v10+
 
 
 ## Usage
