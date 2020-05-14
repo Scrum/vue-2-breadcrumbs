@@ -1,7 +1,7 @@
 import {ComponentOptions, PluginObject, VueConstructor} from 'vue'
 import { Route } from 'vue-router';
 
-type CallbackFunction = () => string;
+type CallbackFunction = (params: any) => string;
 
 class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
   install(Vue: VueConstructor<Vue>, options = {}) {
