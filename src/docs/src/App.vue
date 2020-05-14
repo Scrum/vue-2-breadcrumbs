@@ -1,0 +1,114 @@
+<template>
+  <div id="app">
+    <nav>
+      <img alt="Vue logo" src="./assets/logo.png">
+      <div id="nav">
+        <ul>
+          <li>
+            <router-link to="/">Home</router-link>
+            <ul>
+              <router-link :to="{ name: 'settings'}">Settings</router-link>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <router-link to="/about">About</router-link>
+            <ul>
+              <li><router-link to="/about/foo">foo</router-link></li>
+              <li><router-link to="/about/bar">bar</router-link></li>
+              <li><router-link to="/about/baz">baz</router-link></li>
+              <li><router-link to="/about/1">Other Feed 1</router-link></li>
+              <li><router-link to="/about/2">Other Feed 2</router-link></li>
+              <li><router-link to="/about/3">Other Feed 3</router-link></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <Breadcrumbs/>
+      <router-view/>
+    </main>
+
+  </div>
+</template>
+
+<style>
+pre {text-align: left;}
+nav { width: 150px;}
+nav img {height: 46px; margin-bottom: 16px;}
+ul {list-style: none; margin: 0; padding: 0;}
+li {text-align: left;}
+/* nav ul {margin-left: 12px;} */
+/* ul ul {padding-top: 6px; border-top: 1px solid #2c3e50;margin-left: 0; margin-top: 6px;} */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .75rem 1rem;
+  list-style: none;
+  background-color: rgb(66, 185, 131, 0.2);
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 6px;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block; 
+  color: #2c3e50;
+  content: '/';
+}
+.breadcrumb-item .active {
+  font-weight: bold;
+  color: #2c3e50;
+  text-decoration: none;
+}
+.router-link-exact-active.active {
+  color: #42b983;
+}
+main {
+  flex-grow: 1;
+  margin-left: 24px;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  display: flex;
+}
+
+#nav ul li a {
+  padding: .35rem 1rem .35rem 1.25rem;
+  display: block;
+}
+
+#nav > ul > li:first-child > a {
+  font-size: 1.1em;
+  font-weight: 700;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+#nav ul ul {
+  padding-left: 1rem;
+  font-size: .95em;
+}
+
+#nav ul ul li a {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-weight: 500;
+}
+
+#nav a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+</style>

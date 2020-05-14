@@ -1,8 +1,31 @@
+## 0.6.0 (2020-05-14)
+
+* build: add script build docs ([60cc1a4](https://github.com/Scrum/vue-2-breadcrumbs/commit/60cc1a4))
+* build: not used dir dist ([c5c579c](https://github.com/Scrum/vue-2-breadcrumbs/commit/c5c579c))
+* build: update after migrate to TS ([93e22d5](https://github.com/Scrum/vue-2-breadcrumbs/commit/93e22d5))
+* build: update dep dev ([bb83254](https://github.com/Scrum/vue-2-breadcrumbs/commit/bb83254))
+* build: update dep dev ([d4f9141](https://github.com/Scrum/vue-2-breadcrumbs/commit/d4f9141))
+* build: update rules ([d9ee081](https://github.com/Scrum/vue-2-breadcrumbs/commit/d9ee081))
+* build(deps): bump handlebars from 4.1.2 to 4.5.3 ([6838d73](https://github.com/Scrum/vue-2-breadcrumbs/commit/6838d73))
+* docs: update ([be1226d](https://github.com/Scrum/vue-2-breadcrumbs/commit/be1226d))
+* docs: update demo ([b410093](https://github.com/Scrum/vue-2-breadcrumbs/commit/b410093))
+* docs: update demo and builder demo ([454bd6f](https://github.com/Scrum/vue-2-breadcrumbs/commit/454bd6f))
+* perf: update callback type ([3b5ce89](https://github.com/Scrum/vue-2-breadcrumbs/commit/3b5ce89))
+* ci: drop support old node ([4cd9327](https://github.com/Scrum/vue-2-breadcrumbs/commit/4cd9327))
+* test: fix after migrate to class ([977b3f8](https://github.com/Scrum/vue-2-breadcrumbs/commit/977b3f8))
+* test: fix after update deps ([92274e1](https://github.com/Scrum/vue-2-breadcrumbs/commit/92274e1))
+* feat: migrate to TS, close #70 ([bc77070](https://github.com/Scrum/vue-2-breadcrumbs/commit/bc77070)), closes [#70](https://github.com/Scrum/vue-2-breadcrumbs/issues/70)
+
+
+
 ## <small>0.5.2 (2019-11-21)</small>
 
+* 0.5.2 ([f60df77](https://github.com/Scrum/vue-2-breadcrumbs/commit/f60df77))
+* Create funding.yml ([ebd846f](https://github.com/Scrum/vue-2-breadcrumbs/commit/ebd846f))
 * build: add funding field for npm ([559a05f](https://github.com/Scrum/vue-2-breadcrumbs/commit/559a05f))
 * build: bundle ([93b2425](https://github.com/Scrum/vue-2-breadcrumbs/commit/93b2425))
 * build: move config to file ([cd39a59](https://github.com/Scrum/vue-2-breadcrumbs/commit/cd39a59))
+* build: update changelog ([5a62710](https://github.com/Scrum/vue-2-breadcrumbs/commit/5a62710))
 * build: update depdev ([dafef7f](https://github.com/Scrum/vue-2-breadcrumbs/commit/dafef7f))
 * build(deps): bump eslint-utils from 1.3.1 to 1.4.2 ([b79f3f1](https://github.com/Scrum/vue-2-breadcrumbs/commit/b79f3f1))
 * build(deps): bump lodash.template from 4.4.0 to 4.5.0 ([dd6f8f0](https://github.com/Scrum/vue-2-breadcrumbs/commit/dd6f8f0))
@@ -11,7 +34,6 @@
 * docs: fix badges ([0905dae](https://github.com/Scrum/vue-2-breadcrumbs/commit/0905dae))
 * docs: perf usege, close #63 ([dd9d373](https://github.com/Scrum/vue-2-breadcrumbs/commit/dd9d373)), closes [#63](https://github.com/Scrum/vue-2-breadcrumbs/issues/63)
 * docs: prettier arg ([27673fc](https://github.com/Scrum/vue-2-breadcrumbs/commit/27673fc))
-* Create funding.yml ([ebd846f](https://github.com/Scrum/vue-2-breadcrumbs/commit/ebd846f))
 
 
 
