@@ -1,5 +1,14 @@
+## <small>0.6.2 (2020-05-14)</small>
+
+* docs: rebuild ([92d4c7e](https://github.com/Scrum/vue-2-breadcrumbs/commit/92d4c7e))
+* fix: switch to hash mode ([5140f11](https://github.com/Scrum/vue-2-breadcrumbs/commit/5140f11))
+
+
+
 ## <small>0.6.1 (2020-05-14)</small>
 
+* 0.6.1 ([16ec72d](https://github.com/Scrum/vue-2-breadcrumbs/commit/16ec72d))
+* build: update changelog ([10dd169](https://github.com/Scrum/vue-2-breadcrumbs/commit/10dd169))
 * docs: fix public path ([39f4b97](https://github.com/Scrum/vue-2-breadcrumbs/commit/39f4b97))
 * docs: rebuild ([5144f62](https://github.com/Scrum/vue-2-breadcrumbs/commit/5144f62))
 * docs: rebuild ([229a84b](https://github.com/Scrum/vue-2-breadcrumbs/commit/229a84b))
