@@ -1,10 +1,6 @@
 import test from 'ava';
-import VueBreadcrumbs, {VueBreadcrumbsPlugin} from '../src';
+import VueBreadcrumbs from '../lib/vue-2-breadcrumbs.common';
 
 test('default export should be a function', t => {
-  t.true(VueBreadcrumbs instanceof Function);
-});
-
-test('named export `VueBreadcrumbsPlugin` should be a function', t => {
-  t.true(VueBreadcrumbsPlugin instanceof Function);
+  t.true(VueBreadcrumbs.install instanceof Function);
 });
