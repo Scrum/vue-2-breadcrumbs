@@ -1,8 +1,18 @@
+## <small>0.6.1 (2020-05-14)</small>
+
+* docs: fix public path ([39f4b97](https://github.com/Scrum/vue-2-breadcrumbs/commit/39f4b97))
+* docs: rebuild ([5144f62](https://github.com/Scrum/vue-2-breadcrumbs/commit/5144f62))
+* docs: rebuild ([229a84b](https://github.com/Scrum/vue-2-breadcrumbs/commit/229a84b))
+
+
+
 ## 0.6.0 (2020-05-14)
 
+* 0.6.0 ([9cef60e](https://github.com/Scrum/vue-2-breadcrumbs/commit/9cef60e))
 * build: add script build docs ([60cc1a4](https://github.com/Scrum/vue-2-breadcrumbs/commit/60cc1a4))
 * build: not used dir dist ([c5c579c](https://github.com/Scrum/vue-2-breadcrumbs/commit/c5c579c))
 * build: update after migrate to TS ([93e22d5](https://github.com/Scrum/vue-2-breadcrumbs/commit/93e22d5))
+* build: update changelog ([89d643e](https://github.com/Scrum/vue-2-breadcrumbs/commit/89d643e))
 * build: update dep dev ([bb83254](https://github.com/Scrum/vue-2-breadcrumbs/commit/bb83254))
 * build: update dep dev ([d4f9141](https://github.com/Scrum/vue-2-breadcrumbs/commit/d4f9141))
 * build: update rules ([d9ee081](https://github.com/Scrum/vue-2-breadcrumbs/commit/d9ee081))
