@@ -16,7 +16,6 @@ $ npm install vue-2-breadcrumbs
 
 ## Usage
 
-### Bundler (Webpack, Rollup)
 ```js
 import Vue from 'vue';
 import VueBreadcrumbs from 'vue-2-breadcrumbs';
@@ -24,118 +23,44 @@ import VueBreadcrumbs from 'vue-2-breadcrumbs';
 Vue.use(VueBreadcrumbs);
 ```
 
-### Browser
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue-2-breadcrumbs/dist/vue-2-breadcrumbs.min.js"></script>
-<script>
-// As a plugin
-Vue.use(VueBreadcrumbs.VueBreadcrumbsPlugin);
-</script>
-```
-
-## Example  
+## Meta in router
 ```js
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import VueBreadcrumbs from 'vue-2-breadcrumbs';
 
 Vue.use(VueRouter);
-Vue.use(VueBreadcrumbs);
-
-const Feeds = {template: '<div><router-view/></div>'};
-const Feed = {template: '<div><h2>Feed</h2></div>'};
-const Biz = {template: '<div><h2>Biz</h2></div>'};
-const Foo = {template: '<div><h2>Foo</h2></div>'};
-const Bar = {template: '<div><h2>Bar</h2></div>'};
-const Baz = {template: '<div><h2>Baz</h2></div>'};
-const View = {template: '<div><h2>{{ $route.params }}</h2></div>'};
 
 const router = new VueRouter({
   routes: [
-    {path: '/', redirect: '/feeds'},
     {
-      path: '/feeds',
-      component: Feeds,
+      path: '/',
+      name: 'Home',
+      component: { template: '<h2>Home</h2>' },
       meta: {
-        breadcrumb: 'Feeds'
-      },
-      children: [
-        {
-          path: '',
-          component: Biz
-        },
-        {
-          path: 'foo',
-          component: Foo,
-          meta: {
-            breadcrumb: () => `foo ${1 + 1}`
-          }
-        },
-        {
-          path: 'bar',
-          component: Bar,
-          meta: {
-            breadcrumb: 'bar'
-          }
-        },
-        {
-          name: 'baz',
-          path: 'baz',
-          component: Baz,
-          meta: {
-            breadcrumb: function () {
-              const {name} = this.$route;
-              return `name "${name}" of context $route`;
-            }
-          }
-        },
-        {
-          path: ':id',
-          component: Feed,
-          meta: {
-            breadcrumb: routeParameters => `Other Feed ${routeParameters.id}`
-          },
-          redirect: {
-            name: 'view'
-          },
-          children: [{
-            path: 'view',
-            name: 'view',
-            component: View,
-            meta: {
-              breadcrumb: 'View'
-            }
-          }]
+        breadcrumb: 'Home'
+      }
+    },
+    {
+      path: '/params',
+      name: 'Params',
+      component: { template: '<h2>Params</h2>' },
+      meta: {
+        breadcrumb: routeParams => `route params id: ${routeParams.id}`
+      }
+    },
+    {
+      path: '/context',
+      name: 'Context',
+      component: { template: '<h2>Context</h2>' },
+      meta: {
+        breadcrumb() {
+            const { name } = this.$route;
+            return `name "${name}" of context route`;
         }
-      ]
+      }
     }
   ]
 });
-
-new Vue({
-  router,
-  template: `
-    <div id="app" class="container">
-        <ul class="nav">
-            <li class="nav-item  dropdown">
-                <router-link to="/feeds" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feeds</router-link>
-                <div class="dropdown-menu">
-                    <router-link to="/feeds/foo" class="dropdown-item">Foo</router-link>
-                    <router-link to="/feeds/bar" class="dropdown-item">Bar</router-link>
-                    <router-link to="/feeds/baz" class="dropdown-item">Baz</router-link>
-                    <router-link to="/feeds/1" class="dropdown-item">Other Feed 1</router-link>
-                    <router-link to="/feeds/2" class="dropdown-item">Other Feed 2</router-link>
-                    <router-link to="/feeds/3" class="dropdown-item">Other Feed 3</router-link>
-                </div>
-            </li>
-        </ul>
-        <breadcrumbs/>
-        <router-view/>
-    </div>
-`
-}).$mount('#app');
 ```
 ## Options
 > An options object can also be passed into the plugin to specify your own template and rendering methods if desired. For example:
