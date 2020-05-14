@@ -1,4 +1,3 @@
 {
-  "{src,test}/*.js": "eslint",
-  "*.md": "eslint"
+  "src/*.ts": "tslint -c tslint.json"
 }

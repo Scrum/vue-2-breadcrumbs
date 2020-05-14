@@ -1,0 +1,22 @@
+{
+"compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "types": ["node", "Vue"],
+    "declaration": true,
+    "lib": ["es2015", "dom"]
+    },
+    "include": [
+    "src/*.ts"
+],
+"exclude": ["node_modules"]
+}

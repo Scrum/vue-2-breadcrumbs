@@ -1,36 +1,40 @@
-import babel from 'rollup-plugin-babel';
+import resolve from '@rollup/plugin-node-resolve';
+import typescript from 'rollup-plugin-typescript2';
 import {terser} from 'rollup-plugin-terser';
-import commonjs from 'rollup-plugin-commonjs';
-import resolve from 'rollup-plugin-node-resolve';
-import builtins from 'rollup-plugin-node-builtins';
-import vuePlugin from 'rollup-plugin-vue';
 
 export default {
-  input: 'src/index.js',
+  input: 'src/index.ts',
+  external: [ 'components/breadcrumbs.ts' ],
   output: [
     {
-      file: 'dist/vue-2-breadcrumbs.min.js',
+      file: 'lib/vue-2-breadcrumbs.umd.min.js',
       format: 'umd',
       name: 'VueBreadcrumbs',
-      exports: 'named'
+      exports: 'named',
+      plugins: [terser()],
+      globals: {
+        vue: 'Vue'
+      },
     },
     {
-      file: 'docs/vue-2-breadcrumbs.min.js',
+      file: 'lib/vue-2-breadcrumbs.umd.js',
       format: 'umd',
       name: 'VueBreadcrumbs',
-      exports: 'named'
+      exports: 'named',
+      globals: {
+        vue: 'Vue'
+      },
     },
     {
-      file: 'lib/index.js',
-      format: 'esm'
+      file: 'lib/vue-2-breadcrumbs.esm.js',
+      format: 'esm',
+      exports: 'named',
+    },
+    {
+      file: 'lib/vue-2-breadcrumbs.common.js',
+      format: 'cjs',
+      exports: 'named'
     }
   ],
-  plugins: [
-    resolve(),
-    commonjs(),
-    builtins(),
-    babel(),
-    vuePlugin(),
-    terser()
-  ]
+  plugins: [typescript(), resolve({resolveOnly: ['@/components/breadcrumbs']})]
 };

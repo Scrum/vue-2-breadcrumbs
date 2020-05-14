@@ -1,8 +1,6 @@
 export default {
+  babel: true,
   files: [
     "test/test-*.js"
-  ],
-  require: [
-    "./test/helpers/setup.js"
   ]
 }
