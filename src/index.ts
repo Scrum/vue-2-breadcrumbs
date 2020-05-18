@@ -1,4 +1,4 @@
-import {ComponentOptions, PluginObject, VueConstructor} from 'vue'
+import {ComponentOptions, PluginObject, VueConstructor, VNode} from 'vue'
 import { Route } from 'vue-router';
 
 type CallbackFunction = (params: any) => string;
@@ -31,6 +31,52 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
 
           return path;
         }
+      },
+      render(createElement): VNode {
+        if (this.$breadcrumbs.length) {
+          return createElement(
+            'ol',
+            {
+              class: {
+                'breadcrumb': true
+              }
+            },
+            this.$breadcrumbs.map((crumb: Route, index: number) => {
+              if (crumb && crumb.meta && crumb.meta.breadcrumb) {
+                return createElement(
+                  'li',
+                  {
+                    class: {
+                      'breadcrumb-item': true
+                    },
+                    props: {
+                      key: index
+                    }
+                  },
+                  [
+                    createElement(
+                      'router-link',
+                      {
+                        attrs: {
+                          'active-class': 'active'
+                        },
+                        props: {
+                          to: { path: this.getPath(crumb) },
+                          tag: index !== this.$breadcrumbs.length - 1 ? 'a' : 'span'
+                        }
+                      },
+                      ` ${this.getBreadcrumb(crumb.meta.breadcrumb)}`
+                    )
+                  ]
+                )
+              }
+
+              return createElement();
+            })
+          )
+        }
+
+        return createElement();
       },
       template: `
       <ol

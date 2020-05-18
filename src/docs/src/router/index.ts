@@ -50,7 +50,6 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: '/about',
-    name: 'About',
     component: { template: '<router-view/>' },
     meta: {
       breadcrumb: 'About'
@@ -58,6 +57,7 @@ const routes: Array<RouteConfig> = [
     children: [
       {
           path: '',
+          name: 'About',
           component: { template: '<h2>About</h2>' }
       },
       {
@@ -111,7 +111,7 @@ const routes: Array<RouteConfig> = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: process.env.VUE_APP_BASE_URL,
   routes
 })
 

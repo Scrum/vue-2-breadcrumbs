@@ -1,5 +1,22 @@
+## <small>0.6.3 (2020-05-18)</small>
+
+* docs: perf env ([2ba3565](https://github.com/Scrum/vue-2-breadcrumbs/commit/2ba3565))
+* docs: rebuild ([119d186](https://github.com/Scrum/vue-2-breadcrumbs/commit/119d186))
+* docs: rebuild ([599a989](https://github.com/Scrum/vue-2-breadcrumbs/commit/599a989))
+* docs: rebuild bunbdle ([19ac9f0](https://github.com/Scrum/vue-2-breadcrumbs/commit/19ac9f0))
+* docs: rebuild bundle ([3a15c99](https://github.com/Scrum/vue-2-breadcrumbs/commit/3a15c99))
+* docs: rever history mod and on runtimeCompiler ([45a7d72](https://github.com/Scrum/vue-2-breadcrumbs/commit/45a7d72))
+* docs: update config ([daee189](https://github.com/Scrum/vue-2-breadcrumbs/commit/daee189))
+* perf: add declare breadcrumbs ([a277a28](https://github.com/Scrum/vue-2-breadcrumbs/commit/a277a28))
+* perf: rewrite to declarative, close #64 ([6f8a4ff](https://github.com/Scrum/vue-2-breadcrumbs/commit/6f8a4ff)), closes [#64](https://github.com/Scrum/vue-2-breadcrumbs/issues/64)
+* build: add dom iterable ([7b6a543](https://github.com/Scrum/vue-2-breadcrumbs/commit/7b6a543))
+
+
+
 ## <small>0.6.2 (2020-05-14)</small>
 
+* 0.6.2 ([9a2831d](https://github.com/Scrum/vue-2-breadcrumbs/commit/9a2831d))
+* build: update changelog ([0d0ac0d](https://github.com/Scrum/vue-2-breadcrumbs/commit/0d0ac0d))
 * docs: rebuild ([92d4c7e](https://github.com/Scrum/vue-2-breadcrumbs/commit/92d4c7e))
 * fix: switch to hash mode ([5140f11](https://github.com/Scrum/vue-2-breadcrumbs/commit/5140f11))
 
