@@ -16,11 +16,28 @@ $ npm install vue-2-breadcrumbs
 
 ## Usage
 
+**`main.js`**
 ```js
 import Vue from 'vue';
 import VueBreadcrumbs from 'vue-2-breadcrumbs';
+import App from './App.vue';
 
 Vue.use(VueBreadcrumbs);
+
+new Vue({
+  el: '#app',
+  render (h) {
+    return h(App)
+  }
+});
+```
+**`App.vue`**
+```html
+<template>
+  <div id="app">
+    <Breadcrumbs/>
+  </div>
+</template>
 ```
 
 ## Meta in router
