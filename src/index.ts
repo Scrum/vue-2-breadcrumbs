@@ -78,29 +78,14 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
 
         return createElement();
       },
-      template: `
-      <ol
-          class="breadcrumb"
-          v-if="$breadcrumbs.length"
-      >
-          <li
-              class="breadcrumb-item"
-              v-if="crumb.meta.breadcrumb"
-              v-for="(crumb, i) in $breadcrumbs"
-              :key="i"
-          >
-              <router-link
-                  active-class="active"
-                  :to="{ path: getPath(crumb) }"
-                  :tag="i != $breadcrumbs.length - 1 ? 'a' : 'span'"
-              >
-                  {{ getBreadcrumb(crumb.meta.breadcrumb) }}
-              </router-link>
-          </li>
-      </ol>`,
       ...options
     }))
   }
 }
 
 export default new VueBreadcrumbs();
+
+// Automatic installation if Vue has been added to the global scope.
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(new VueBreadcrumbs())
+}
