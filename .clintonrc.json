@@ -10,6 +10,7 @@
   ],
   "rules": {
     "pkg-main": "off",
-    "xo": "off"
+    "xo": "off",
+    "use-travis": "off"
   }
 }
