@@ -1,5 +1,25 @@
+## 0.7.0 (2020-06-01)
+
+* ci: add github actions ([14fd912](https://github.com/Scrum/vue-2-breadcrumbs/commit/14fd912))
+* ci: drop travis support ([e7af46e](https://github.com/Scrum/vue-2-breadcrumbs/commit/e7af46e))
+* docs: add feat set parent ([978bdb8](https://github.com/Scrum/vue-2-breadcrumbs/commit/978bdb8))
+* docs: add github actions badge ([d520126](https://github.com/Scrum/vue-2-breadcrumbs/commit/d520126))
+* docs: rebuild demo ([e605be6](https://github.com/Scrum/vue-2-breadcrumbs/commit/e605be6))
+* docs: update example, issue #75 ([d43ad77](https://github.com/Scrum/vue-2-breadcrumbs/commit/d43ad77)), closes [#75](https://github.com/Scrum/vue-2-breadcrumbs/issues/75)
+* build: add build watch ([099ba82](https://github.com/Scrum/vue-2-breadcrumbs/commit/099ba82))
+* build: update dep dev ([7ce17b5](https://github.com/Scrum/vue-2-breadcrumbs/commit/7ce17b5))
+* perf: drop use template for component ([342fd2a](https://github.com/Scrum/vue-2-breadcrumbs/commit/342fd2a))
+* perf: type for breadcrumbs ([09bad28](https://github.com/Scrum/vue-2-breadcrumbs/commit/09bad28))
+* perf: type for route ([c8abf59](https://github.com/Scrum/vue-2-breadcrumbs/commit/c8abf59))
+* feat: set route parent, close #76 ([9c2396a](https://github.com/Scrum/vue-2-breadcrumbs/commit/9c2396a)), closes [#76](https://github.com/Scrum/vue-2-breadcrumbs/issues/76)
+
+
+
 ## <small>0.6.3 (2020-05-18)</small>
 
+* 0.6.3 ([683fa52](https://github.com/Scrum/vue-2-breadcrumbs/commit/683fa52))
+* build: add dom iterable ([7b6a543](https://github.com/Scrum/vue-2-breadcrumbs/commit/7b6a543))
+* build: update changelog ([e0bffa5](https://github.com/Scrum/vue-2-breadcrumbs/commit/e0bffa5))
 * docs: perf env ([2ba3565](https://github.com/Scrum/vue-2-breadcrumbs/commit/2ba3565))
 * docs: rebuild ([119d186](https://github.com/Scrum/vue-2-breadcrumbs/commit/119d186))
 * docs: rebuild ([599a989](https://github.com/Scrum/vue-2-breadcrumbs/commit/599a989))
@@ -9,7 +29,6 @@
 * docs: update config ([daee189](https://github.com/Scrum/vue-2-breadcrumbs/commit/daee189))
 * perf: add declare breadcrumbs ([a277a28](https://github.com/Scrum/vue-2-breadcrumbs/commit/a277a28))
 * perf: rewrite to declarative, close #64 ([6f8a4ff](https://github.com/Scrum/vue-2-breadcrumbs/commit/6f8a4ff)), closes [#64](https://github.com/Scrum/vue-2-breadcrumbs/issues/64)
-* build: add dom iterable ([7b6a543](https://github.com/Scrum/vue-2-breadcrumbs/commit/7b6a543))
 
 
 

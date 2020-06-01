@@ -1,7 +1,7 @@
-import { Route } from "vue-router";
+import { RouteRecord } from "vue-router";
 
 declare module 'vue/types/vue' {
   interface Vue {
-    $breadcrumbs: Route[]
+    $breadcrumbs: RouteRecord[]
   }
 }

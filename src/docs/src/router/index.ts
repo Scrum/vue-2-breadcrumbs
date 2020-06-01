@@ -106,6 +106,16 @@ const routes: Array<RouteConfig> = [
           ]
       }
     ]
+  },
+  {
+    path: '/parent',
+    component: { template: '<router-view/>' },
+    meta: {
+      breadcrumb: {
+        label: 'Parent to settings',
+        parent: 'settings'
+      }
+    },
   }
 ]
 

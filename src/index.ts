@@ -1,28 +1,61 @@
 import {ComponentOptions, PluginObject, VueConstructor, VNode} from 'vue'
-import { Route } from 'vue-router';
+import { RouteRecord } from 'vue-router';
 
 type CallbackFunction = (params: any) => string;
+
+type Breadcrumbs = {
+  label: string | CallbackFunction
+  parent: string
+}
+
+const resolvePath = (route: RouteRecord): RouteRecord => {
+  if (route.path.length === 0) {
+    route.path = '/';
+  }
+
+  return route;
+}
 
 class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
   install(Vue: VueConstructor<Vue>, options = {}) {
 
     Object.defineProperties(Vue.prototype, {
       $breadcrumbs: {
-        get(): Route[] {
-          return this.$route.matched.map((route: Route) => ({
-            ...route,
-            path: route.path.length > 0 ? route.path : '/'
-          }));
+        get(): RouteRecord[] {
+          return this.$route.matched
+            .flatMap((route: RouteRecord) => {
+              let routeRecord: RouteRecord[] = [];
+
+              if (route.meta && route.meta.breadcrumb && route.meta.breadcrumb.parent) {
+                const matched = this.$router.resolve({name: route.meta.breadcrumb.parent}).route.matched
+
+                routeRecord = [...matched, ...routeRecord];
+              }
+
+              routeRecord.push(route)
+              return routeRecord
+            })
+            .map(resolvePath);
         }
       }
     });
 
     Vue.component('Breadcrumbs', Vue.extend({
       methods: {
-        getBreadcrumb(bc: string | CallbackFunction): string {
-          return typeof bc === 'function' ? bc.call(this, this.$route.params) : bc;
+        getBreadcrumb(bc: string | CallbackFunction | Breadcrumbs): string {
+          let name = bc;
+
+          if (typeof name === 'object') {
+            name = name.label
+          }
+
+          if (typeof name === 'function') {
+            return name.call(this, this.$route.params);
+          }
+
+          return name;
         },
-        getPath(crumb: Route): string {
+        getPath(crumb: RouteRecord): string {
           let {path} = crumb;
 
           for (const [key, value] of Object.entries(this.$route.params)) {
@@ -41,7 +74,7 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
                 'breadcrumb': true
               }
             },
-            this.$breadcrumbs.map((crumb: Route, index: number) => {
+            this.$breadcrumbs.map((crumb: RouteRecord, index: number) => {
               if (crumb && crumb.meta && crumb.meta.breadcrumb) {
                 return createElement(
                   'li',
@@ -57,9 +90,6 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
                     createElement(
                       'router-link',
                       {
-                        attrs: {
-                          'active-class': 'active'
-                        },
                         props: {
                           to: { path: this.getPath(crumb) },
                           tag: index !== this.$breadcrumbs.length - 1 ? 'a' : 'span'
@@ -78,29 +108,14 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
 
         return createElement();
       },
-      template: `
-      <ol
-          class="breadcrumb"
-          v-if="$breadcrumbs.length"
-      >
-          <li
-              class="breadcrumb-item"
-              v-if="crumb.meta.breadcrumb"
-              v-for="(crumb, i) in $breadcrumbs"
-              :key="i"
-          >
-              <router-link
-                  active-class="active"
-                  :to="{ path: getPath(crumb) }"
-                  :tag="i != $breadcrumbs.length - 1 ? 'a' : 'span'"
-              >
-                  {{ getBreadcrumb(crumb.meta.breadcrumb) }}
-              </router-link>
-          </li>
-      </ol>`,
       ...options
     }))
   }
 }
 
 export default new VueBreadcrumbs();
+
+// Automatic installation if Vue has been added to the global scope.
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(new VueBreadcrumbs())
+}
