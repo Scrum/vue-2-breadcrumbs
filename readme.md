@@ -5,6 +5,15 @@
 
 [![npm downloads](https://img.shields.io/npm/dm/vue-2-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/vue-2-breadcrumbs)[![npm](https://img.shields.io/npm/dt/vue-2-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/vue-2-breadcrumbs)
 
+## Support
+- Setting parent route without need to actually nest it in children array
+- Customized template
+- Dynamic breadcrumbs 
+- Dynamic label 
+- Shorthand labeling (`breadcrumb: 'Page Label'`)
+- Sub-routing
+
+
 ## Install
 
 ```bash
@@ -75,6 +84,16 @@ const router = new VueRouter({
             return `name "${name}" of context route`;
         }
       }
+    },
+    {
+      path: '/parent',
+      component: { template: '<router-view/>' },
+      meta: {
+        breadcrumb: {
+          label: 'Parent to Params',
+          parent: 'Params'
+        }
+      },
     }
   ]
 });

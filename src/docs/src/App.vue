@@ -24,6 +24,11 @@
             </ul>
           </li>
         </ul>
+        <ul>
+          <li>
+            <router-link to="/parent">Parent</router-link>
+          </li>
+        </ul>
       </div>
     </nav>
     <main>
@@ -59,12 +64,12 @@ li {text-align: left;}
   color: #2c3e50;
   content: '/';
 }
-.breadcrumb-item .active {
+.breadcrumb-item a {
   font-weight: bold;
   color: #2c3e50;
   text-decoration: none;
 }
-.router-link-exact-active.active {
+.breadcrumb-item span {
   color: #42b983;
 }
 main {
