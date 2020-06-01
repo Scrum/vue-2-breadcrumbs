@@ -1,4 +1,4 @@
-name: CI tests
+name: Actions Status
 
 on:
   push:
