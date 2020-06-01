@@ -1,13 +1,27 @@
+## <small>0.7.1 (2020-06-01)</small>
+
+* ci: change name to Actions Status ([6651ac0](https://github.com/Scrum/vue-2-breadcrumbs/commit/6651ac0))
+* ci: drop windows ([ccf3cb9](https://github.com/Scrum/vue-2-breadcrumbs/commit/ccf3cb9))
+* fix: off travis in rules, close #80 ([6ceb3bb](https://github.com/Scrum/vue-2-breadcrumbs/commit/6ceb3bb)), closes [#80](https://github.com/Scrum/vue-2-breadcrumbs/issues/80)
+* build: fix nyc config ([a174aa3](https://github.com/Scrum/vue-2-breadcrumbs/commit/a174aa3))
+* docs: update action badges name ([2872661](https://github.com/Scrum/vue-2-breadcrumbs/commit/2872661))
+* docs: update description component name ([208dddc](https://github.com/Scrum/vue-2-breadcrumbs/commit/208dddc))
+* docs: update github actions badges ([6a148ba](https://github.com/Scrum/vue-2-breadcrumbs/commit/6a148ba))
+
+
+
 ## 0.7.0 (2020-06-01)
 
+* 0.7.0 ([21e2d58](https://github.com/Scrum/vue-2-breadcrumbs/commit/21e2d58))
+* build: add build watch ([099ba82](https://github.com/Scrum/vue-2-breadcrumbs/commit/099ba82))
+* build: update changelog ([325c4fb](https://github.com/Scrum/vue-2-breadcrumbs/commit/325c4fb))
+* build: update dep dev ([7ce17b5](https://github.com/Scrum/vue-2-breadcrumbs/commit/7ce17b5))
 * ci: add github actions ([14fd912](https://github.com/Scrum/vue-2-breadcrumbs/commit/14fd912))
 * ci: drop travis support ([e7af46e](https://github.com/Scrum/vue-2-breadcrumbs/commit/e7af46e))
 * docs: add feat set parent ([978bdb8](https://github.com/Scrum/vue-2-breadcrumbs/commit/978bdb8))
 * docs: add github actions badge ([d520126](https://github.com/Scrum/vue-2-breadcrumbs/commit/d520126))
 * docs: rebuild demo ([e605be6](https://github.com/Scrum/vue-2-breadcrumbs/commit/e605be6))
 * docs: update example, issue #75 ([d43ad77](https://github.com/Scrum/vue-2-breadcrumbs/commit/d43ad77)), closes [#75](https://github.com/Scrum/vue-2-breadcrumbs/issues/75)
-* build: add build watch ([099ba82](https://github.com/Scrum/vue-2-breadcrumbs/commit/099ba82))
-* build: update dep dev ([7ce17b5](https://github.com/Scrum/vue-2-breadcrumbs/commit/7ce17b5))
 * perf: drop use template for component ([342fd2a](https://github.com/Scrum/vue-2-breadcrumbs/commit/342fd2a))
 * perf: type for breadcrumbs ([09bad28](https://github.com/Scrum/vue-2-breadcrumbs/commit/09bad28))
 * perf: type for route ([c8abf59](https://github.com/Scrum/vue-2-breadcrumbs/commit/c8abf59))
