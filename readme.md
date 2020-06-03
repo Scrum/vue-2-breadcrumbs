@@ -6,6 +6,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/vue-2-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/vue-2-breadcrumbs)[![npm](https://img.shields.io/npm/dt/vue-2-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/vue-2-breadcrumbs)
 
 ## Support
+- Support SSR
 - Setting parent route without need to actually nest it in children array
 - Customized template
 - Dynamic breadcrumbs 
