@@ -1,9 +1,19 @@
+## <small>0.7.2 (2020-06-03)</small>
+
+* fix: ignore lock in npm ([270b7df](https://github.com/Scrum/vue-2-breadcrumbs/commit/270b7df))
+* fix: support old browser ([c4e00c4](https://github.com/Scrum/vue-2-breadcrumbs/commit/c4e00c4))
+* ci: nyc show report text ([d4b2cf1](https://github.com/Scrum/vue-2-breadcrumbs/commit/d4b2cf1))
+
+
+
 ## <small>0.7.1 (2020-06-01)</small>
 
+* 0.7.1 ([14e16b3](https://github.com/Scrum/vue-2-breadcrumbs/commit/14e16b3))
+* build: fix nyc config ([a174aa3](https://github.com/Scrum/vue-2-breadcrumbs/commit/a174aa3))
+* build: update changelog ([b603e92](https://github.com/Scrum/vue-2-breadcrumbs/commit/b603e92))
 * ci: change name to Actions Status ([6651ac0](https://github.com/Scrum/vue-2-breadcrumbs/commit/6651ac0))
 * ci: drop windows ([ccf3cb9](https://github.com/Scrum/vue-2-breadcrumbs/commit/ccf3cb9))
 * fix: off travis in rules, close #80 ([6ceb3bb](https://github.com/Scrum/vue-2-breadcrumbs/commit/6ceb3bb)), closes [#80](https://github.com/Scrum/vue-2-breadcrumbs/issues/80)
-* build: fix nyc config ([a174aa3](https://github.com/Scrum/vue-2-breadcrumbs/commit/a174aa3))
 * docs: update action badges name ([2872661](https://github.com/Scrum/vue-2-breadcrumbs/commit/2872661))
 * docs: update description component name ([208dddc](https://github.com/Scrum/vue-2-breadcrumbs/commit/208dddc))
 * docs: update github actions badges ([6a148ba](https://github.com/Scrum/vue-2-breadcrumbs/commit/6a148ba))
