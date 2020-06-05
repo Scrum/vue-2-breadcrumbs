@@ -109,7 +109,7 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: '/parent',
-    component: { template: '<router-view/>' },
+    component: { template: '<h2>Parent</h2>' },
     meta: {
       breadcrumb: {
         label: 'Parent to settings',
