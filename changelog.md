@@ -1,5 +1,17 @@
+## <small>0.7.3 (2020-06-05)</small>
+
+* build: update dep dev ([dfb7a48](https://github.com/Scrum/vue-2-breadcrumbs/commit/dfb7a48))
+* docs: add ssr support ([9d20ea9](https://github.com/Scrum/vue-2-breadcrumbs/commit/9d20ea9))
+* docs: fix header for parent ([671db80](https://github.com/Scrum/vue-2-breadcrumbs/commit/671db80))
+* docs: rebuild ([2291644](https://github.com/Scrum/vue-2-breadcrumbs/commit/2291644))
+* docs: rebuild after reinstall module ([754a5eb](https://github.com/Scrum/vue-2-breadcrumbs/commit/754a5eb))
+
+
+
 ## <small>0.7.2 (2020-06-03)</small>
 
+* 0.7.2 ([f0b9915](https://github.com/Scrum/vue-2-breadcrumbs/commit/f0b9915))
+* build: update changelog ([c3a0ebc](https://github.com/Scrum/vue-2-breadcrumbs/commit/c3a0ebc))
 * fix: ignore lock in npm ([270b7df](https://github.com/Scrum/vue-2-breadcrumbs/commit/270b7df))
 * fix: support old browser ([c4e00c4](https://github.com/Scrum/vue-2-breadcrumbs/commit/c4e00c4))
 * ci: nyc show report text ([d4b2cf1](https://github.com/Scrum/vue-2-breadcrumbs/commit/d4b2cf1))
