@@ -16,15 +16,15 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
         get(): RouteRecord[] {
           return this.$route.matched
             .flatMap((route: RouteRecord) => {
-              let routeRecord: RouteRecord[] = [];
+              let routeRecord: RouteRecord[] = [route];
 
               if (route.meta?.breadcrumb?.parent) {
                 const matched = this.$router.resolve({name: route.meta.breadcrumb.parent}).route.matched
 
-                routeRecord = [...matched];
+                routeRecord = [...matched, ...routeRecord];
               }
 
-              return [...routeRecord, route]
+              return routeRecord
             })
             .map((route: RouteRecord) => route.path.length === 0
               ? ({ ...route, path: '/' })
