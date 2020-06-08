@@ -8,14 +8,6 @@ type Breadcrumbs = {
   parent: string
 }
 
-const resolvePath = (route: RouteRecord): RouteRecord => {
-  if (route.path.length === 0) {
-    route.path = '/';
-  }
-
-  return route;
-}
-
 class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
   install(Vue: VueConstructor<Vue>, options = {}) {
 
@@ -24,18 +16,20 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
         get(): RouteRecord[] {
           return this.$route.matched
             .flatMap((route: RouteRecord) => {
-              let routeRecord: RouteRecord[] = [];
+              let routeRecord: RouteRecord[] = [route];
 
-              if (route.meta && route.meta.breadcrumb && route.meta.breadcrumb.parent) {
+              if (route.meta?.breadcrumb?.parent) {
                 const matched = this.$router.resolve({name: route.meta.breadcrumb.parent}).route.matched
 
                 routeRecord = [...matched, ...routeRecord];
               }
 
-              routeRecord.push(route)
               return routeRecord
             })
-            .map(resolvePath);
+            .map((route: RouteRecord) => route.path.length === 0
+              ? ({ ...route, path: '/' })
+              : route
+            );
         }
       }
     });
@@ -75,7 +69,7 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
               }
             },
             this.$breadcrumbs.map((crumb: RouteRecord, index: number) => {
-              if (crumb && crumb.meta && crumb.meta.breadcrumb) {
+              if (crumb?.meta?.breadcrumb) {
                 return createElement(
                   'li',
                   {
