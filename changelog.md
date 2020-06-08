@@ -1,5 +1,17 @@
+## <small>0.7.4 (2020-06-08)</small>
+
+* docs: rebuild ([57fef75](https://github.com/Scrum/vue-2-breadcrumbs/commit/57fef75))
+* build: update dep dev ([3070437](https://github.com/Scrum/vue-2-breadcrumbs/commit/3070437))
+* build(deps): bump websocket-extensions from 0.1.3 to 0.1.4 in /src/docs ([fc38ae4](https://github.com/Scrum/vue-2-breadcrumbs/commit/fc38ae4))
+* refactor: es10 features ([67935e4](https://github.com/Scrum/vue-2-breadcrumbs/commit/67935e4))
+* refactor: minor stuff ([25550ba](https://github.com/Scrum/vue-2-breadcrumbs/commit/25550ba))
+
+
+
 ## <small>0.7.3 (2020-06-05)</small>
 
+* 0.7.3 ([3e90adb](https://github.com/Scrum/vue-2-breadcrumbs/commit/3e90adb))
+* build: update changelog ([579e416](https://github.com/Scrum/vue-2-breadcrumbs/commit/579e416))
 * build: update dep dev ([dfb7a48](https://github.com/Scrum/vue-2-breadcrumbs/commit/dfb7a48))
 * docs: add ssr support ([9d20ea9](https://github.com/Scrum/vue-2-breadcrumbs/commit/9d20ea9))
 * docs: fix header for parent ([671db80](https://github.com/Scrum/vue-2-breadcrumbs/commit/671db80))
