@@ -1,7 +1,9 @@
 import {ComponentOptions, PluginObject, VueConstructor, VNode} from 'vue'
+
 import { RouteRecord } from 'vue-router';
 
-type CallbackFunction = (params: any) => string;
+type Dictionary<T> = { [key: string]: T }
+type CallbackFunction = (params: Dictionary<string>) => string;
 
 type Breadcrumbs = {
   label: string | CallbackFunction
@@ -9,7 +11,11 @@ type Breadcrumbs = {
 }
 
 class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
-  install(Vue: VueConstructor<Vue>, options = {}) {
+  public install(Vue: VueConstructor<Vue>, options: Dictionary<any> = {}) {
+
+    if (options.template) {
+      options.render = undefined;
+    }
 
     Object.defineProperties(Vue.prototype, {
       $breadcrumbs: {

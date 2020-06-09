@@ -1,8 +1,18 @@
+## <small>0.7.5 (2020-06-09)</small>
+
+* docs: rebuild ([d4b9fc9](https://github.com/Scrum/vue-2-breadcrumbs/commit/d4b9fc9))
+* docs: ts config to es5 ([6225ea6](https://github.com/Scrum/vue-2-breadcrumbs/commit/6225ea6))
+* fix: set options, close #88 ([ef943a4](https://github.com/Scrum/vue-2-breadcrumbs/commit/ef943a4)), closes [#88](https://github.com/Scrum/vue-2-breadcrumbs/issues/88)
+
+
+
 ## <small>0.7.4 (2020-06-08)</small>
 
-* docs: rebuild ([57fef75](https://github.com/Scrum/vue-2-breadcrumbs/commit/57fef75))
+* 0.7.4 ([fcda1e6](https://github.com/Scrum/vue-2-breadcrumbs/commit/fcda1e6))
+* build: update changelog ([4273bb1](https://github.com/Scrum/vue-2-breadcrumbs/commit/4273bb1))
 * build: update dep dev ([3070437](https://github.com/Scrum/vue-2-breadcrumbs/commit/3070437))
 * build(deps): bump websocket-extensions from 0.1.3 to 0.1.4 in /src/docs ([fc38ae4](https://github.com/Scrum/vue-2-breadcrumbs/commit/fc38ae4))
+* docs: rebuild ([57fef75](https://github.com/Scrum/vue-2-breadcrumbs/commit/57fef75))
 * refactor: es10 features ([67935e4](https://github.com/Scrum/vue-2-breadcrumbs/commit/67935e4))
 * refactor: minor stuff ([25550ba](https://github.com/Scrum/vue-2-breadcrumbs/commit/25550ba))
 
