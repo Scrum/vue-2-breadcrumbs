@@ -76,7 +76,8 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
             },
             this.$breadcrumbs.map((crumb: RouteRecord, index: number) => {
               if (crumb?.meta?.breadcrumb) {
-                if (this.getBreadcrumb(crumb.meta.breadcrumb) === '') {
+                let label = this.getBreadcrumb(crumb.meta.breadcrumb);
+                if (label === '') {
                   console.log('Breadcrumb blank. Ignoring');
                 } else {
                   console.log('Breadcrumb valid', crumb?.meta?.breadcrumb);
@@ -99,7 +100,7 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
                             tag: index !== this.$breadcrumbs.length - 1 ? 'a' : 'span'
                           }
                         },
-                        ` ${this.getBreadcrumb(crumb.meta.breadcrumb)}`
+                        ` ${label}`
                       )
                     ]
                   )
