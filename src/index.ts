@@ -1,4 +1,4 @@
-import {ComponentOptions, PluginObject, VueConstructor, VNode} from 'vue'
+import { ComponentOptions, PluginObject, VueConstructor, VNode } from 'vue'
 
 import { RouteRecord } from 'vue-router';
 
@@ -25,7 +25,7 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
               let routeRecord: RouteRecord[] = [route];
 
               if (route.meta?.breadcrumb?.parent) {
-                const matched = this.$router.resolve({name: route.meta.breadcrumb.parent}).route.matched
+                const matched = this.$router.resolve({ name: route.meta.breadcrumb.parent }).route.matched
 
                 routeRecord = [...matched, ...routeRecord];
               }
@@ -56,7 +56,7 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
           return name;
         },
         getPath(crumb: RouteRecord): string {
-          let {path} = crumb;
+          let { path } = crumb;
 
           for (const [key, value] of Object.entries(this.$route.params)) {
             path = path.replace(`:${key}`, value);
@@ -76,29 +76,33 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
             },
             this.$breadcrumbs.map((crumb: RouteRecord, index: number) => {
               if (crumb?.meta?.breadcrumb) {
-                return createElement(
-                  'li',
-                  {
-                    class: {
-                      'breadcrumb-item': true
-                    },
-                    props: {
-                      key: index
-                    }
-                  },
-                  [
-                    createElement(
-                      'router-link',
-                      {
-                        props: {
-                          to: { path: this.getPath(crumb) },
-                          tag: index !== this.$breadcrumbs.length - 1 ? 'a' : 'span'
-                        }
+                let label = this.getBreadcrumb(crumb.meta.breadcrumb);
+                if (label !== '') {
+
+                  return createElement(
+                    'li',
+                    {
+                      class: {
+                        'breadcrumb-item': true
                       },
-                      ` ${this.getBreadcrumb(crumb.meta.breadcrumb)}`
-                    )
-                  ]
-                )
+                      props: {
+                        key: index
+                      }
+                    },
+                    [
+                      createElement(
+                        'router-link',
+                        {
+                          props: {
+                            to: { path: this.getPath(crumb) },
+                            tag: index !== this.$breadcrumbs.length - 1 ? 'a' : 'span'
+                          }
+                        },
+                        ` ${label}`
+                      )
+                    ]
+                  )
+                }
               }
 
               return createElement();
