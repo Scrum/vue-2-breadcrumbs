@@ -1,5 +1,21 @@
+## <small>0.7.6 (2020-06-16)</small>
+
+* perf: label condition ([a92fec4](https://github.com/Scrum/vue-2-breadcrumbs/commit/a92fec4))
+* build: of ava ([6a89895](https://github.com/Scrum/vue-2-breadcrumbs/commit/6a89895))
+* build: update dep dev ([826bc15](https://github.com/Scrum/vue-2-breadcrumbs/commit/826bc15))
+* fix: trailingspace ([1a34893](https://github.com/Scrum/vue-2-breadcrumbs/commit/1a34893))
+* Added test to exclude blank breadcrumbs ([dc73ddb](https://github.com/Scrum/vue-2-breadcrumbs/commit/dc73ddb))
+* Added test to exclude blank breadcrumbs ([d3021bb](https://github.com/Scrum/vue-2-breadcrumbs/commit/d3021bb))
+* Added test to exclude blank breadcrumbs ([00d87bf](https://github.com/Scrum/vue-2-breadcrumbs/commit/00d87bf))
+* Added test to exclude blank breadcrumbs ([88a296c](https://github.com/Scrum/vue-2-breadcrumbs/commit/88a296c))
+* Added test to exclude blank breadcrumbs ([cb70e36](https://github.com/Scrum/vue-2-breadcrumbs/commit/cb70e36))
+
+
+
 ## <small>0.7.5 (2020-06-09)</small>
 
+* 0.7.5 ([d4b25ff](https://github.com/Scrum/vue-2-breadcrumbs/commit/d4b25ff))
+* build: update changelog ([3983493](https://github.com/Scrum/vue-2-breadcrumbs/commit/3983493))
 * docs: rebuild ([d4b9fc9](https://github.com/Scrum/vue-2-breadcrumbs/commit/d4b9fc9))
 * docs: ts config to es5 ([6225ea6](https://github.com/Scrum/vue-2-breadcrumbs/commit/6225ea6))
 * fix: set options, close #88 ([ef943a4](https://github.com/Scrum/vue-2-breadcrumbs/commit/ef943a4)), closes [#88](https://github.com/Scrum/vue-2-breadcrumbs/issues/88)
