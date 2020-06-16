@@ -11,6 +11,7 @@
   "rules": {
     "pkg-main": "off",
     "xo": "off",
-    "use-travis": "off"
+    "use-travis": "off",
+    "ava": "off"
   }
 }
