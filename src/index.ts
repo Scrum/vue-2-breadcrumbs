@@ -78,7 +78,7 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
               if (crumb?.meta?.breadcrumb) {
                 let label = this.getBreadcrumb(crumb.meta.breadcrumb);
                 if (label !== '') {
-                  
+
                   return createElement(
                     'li',
                     {
