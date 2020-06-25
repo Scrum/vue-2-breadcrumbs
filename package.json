@@ -18,12 +18,11 @@
     "node": ">=10"
   },
   "scripts": {
-    "install": "npm install --prefix src/docs",
     "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md && git commit -m \"build: update changelog\"",
     "prepare": "npm run build",
     "build": "rimraf lib && rollup -c",
     "build:w": "rimraf lib && rollup -c -w",
-    "docs": "npm run build --prefix src/docs",
+    "docs": "npm install --prefix src/docs && npm run build --prefix src/docs",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "test": "npm run build && nyc ava",
     "pretest": "clinton"

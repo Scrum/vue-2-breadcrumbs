@@ -1,6 +1,5 @@
 node_modules
 src
-src/docs/package-lock.json
 .gitignore
 .github
 .travis.yml
