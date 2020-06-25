@@ -1,14 +1,22 @@
+## <small>0.7.7 (2020-06-25)</small>
+
+* fix: long path after install, close #95 ([8ac8b8c](https://github.com/Scrum/vue-2-breadcrumbs/commit/8ac8b8c)), closes [#95](https://github.com/Scrum/vue-2-breadcrumbs/issues/95)
+
+
+
 ## <small>0.7.6 (2020-06-16)</small>
 
-* perf: label condition ([a92fec4](https://github.com/Scrum/vue-2-breadcrumbs/commit/a92fec4))
-* build: of ava ([6a89895](https://github.com/Scrum/vue-2-breadcrumbs/commit/6a89895))
-* build: update dep dev ([826bc15](https://github.com/Scrum/vue-2-breadcrumbs/commit/826bc15))
-* fix: trailingspace ([1a34893](https://github.com/Scrum/vue-2-breadcrumbs/commit/1a34893))
+* 0.7.6 ([029abc1](https://github.com/Scrum/vue-2-breadcrumbs/commit/029abc1))
 * Added test to exclude blank breadcrumbs ([dc73ddb](https://github.com/Scrum/vue-2-breadcrumbs/commit/dc73ddb))
 * Added test to exclude blank breadcrumbs ([d3021bb](https://github.com/Scrum/vue-2-breadcrumbs/commit/d3021bb))
 * Added test to exclude blank breadcrumbs ([00d87bf](https://github.com/Scrum/vue-2-breadcrumbs/commit/00d87bf))
 * Added test to exclude blank breadcrumbs ([88a296c](https://github.com/Scrum/vue-2-breadcrumbs/commit/88a296c))
 * Added test to exclude blank breadcrumbs ([cb70e36](https://github.com/Scrum/vue-2-breadcrumbs/commit/cb70e36))
+* build: of ava ([6a89895](https://github.com/Scrum/vue-2-breadcrumbs/commit/6a89895))
+* build: update changelog ([9773be0](https://github.com/Scrum/vue-2-breadcrumbs/commit/9773be0))
+* build: update dep dev ([826bc15](https://github.com/Scrum/vue-2-breadcrumbs/commit/826bc15))
+* perf: label condition ([a92fec4](https://github.com/Scrum/vue-2-breadcrumbs/commit/a92fec4))
+* fix: trailingspace ([1a34893](https://github.com/Scrum/vue-2-breadcrumbs/commit/1a34893))
 
 
 
