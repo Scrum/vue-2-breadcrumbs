@@ -1,5 +1,14 @@
+## <small>0.7.8 (2020-06-30)</small>
+
+* ci: perf run actions ([ea7d9cb](https://github.com/Scrum/vue-2-breadcrumbs/commit/ea7d9cb))
+* ci: remove coverage script and pkg, close #97 ([6ed5f87](https://github.com/Scrum/vue-2-breadcrumbs/commit/6ed5f87)), closes [#97](https://github.com/Scrum/vue-2-breadcrumbs/issues/97)
+
+
+
 ## <small>0.7.7 (2020-06-25)</small>
 
+* 0.7.7 ([f0d306f](https://github.com/Scrum/vue-2-breadcrumbs/commit/f0d306f))
+* build: update changelog ([2409bb0](https://github.com/Scrum/vue-2-breadcrumbs/commit/2409bb0))
 * fix: long path after install, close #95 ([8ac8b8c](https://github.com/Scrum/vue-2-breadcrumbs/commit/8ac8b8c)), closes [#95](https://github.com/Scrum/vue-2-breadcrumbs/issues/95)
 
 
