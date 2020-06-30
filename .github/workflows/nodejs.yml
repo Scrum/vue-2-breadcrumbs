@@ -1,5 +1,9 @@
 name: Actions Status
-on: [push, pull_request]
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - master
 env:
   CI: true
 
