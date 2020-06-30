@@ -1,6 +1,6 @@
 {
   "name": "vue-2-breadcrumbs",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "description": "Breadcrumbs for Vue.js 2.0",
   "license": "MIT",
   "repository": "Scrum/vue-2-breadcrumbs",
@@ -23,7 +23,6 @@
     "build": "rimraf lib && rollup -c",
     "build:w": "rimraf lib && rollup -c -w",
     "docs": "npm install --prefix src/docs && npm run build --prefix src/docs",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "test": "npm run build && nyc ava",
     "pretest": "clinton"
   },
@@ -47,7 +46,6 @@
     "ava": "^3.9.0",
     "clinton": "^0.14.0",
     "conventional-changelog-cli": "^2.0.34",
-    "coveralls": "^3.1.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.10",
     "nyc": "^15.1.0",
