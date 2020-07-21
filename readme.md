@@ -10,6 +10,7 @@
 - Setting parent route without need to actually nest it in children array
 - Customized template
 - Dynamic breadcrumbs 
+- Dynamic parent 
 - Dynamic label 
 - Shorthand labeling (`breadcrumb: 'Page Label'`)
 - Sub-routing
