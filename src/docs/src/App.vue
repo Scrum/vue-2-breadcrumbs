@@ -29,6 +29,11 @@
             <router-link to="/parent">Parent</router-link>
           </li>
         </ul>
+        <ul>
+          <li>
+            <router-link to="/dynamic-parent">Dynamic Parent</router-link>
+          </li>
+        </ul>
       </div>
     </nav>
     <main>

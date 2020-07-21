@@ -10,6 +10,7 @@
 - Setting parent route without need to actually nest it in children array
 - Customized template
 - Dynamic breadcrumbs 
+- Dynamic parent 
 - Dynamic label 
 - Shorthand labeling (`breadcrumb: 'Page Label'`)
 - Sub-routing
@@ -80,6 +81,20 @@ const router = new VueRouter({
           parent: 'Params'
         }
       },
+      {
+        name: 'dynamic-parent',
+        path: '/dynamic-parent',
+        component: { template: '<h2>Dynamic Parent</h2>' },
+        meta: {
+          breadcrumb() {
+            const { name } = this.$route;
+
+            return {
+              label: name,
+              parent: 'settings'
+            };
+          }
+        }
     }
   ]
 });
