@@ -6,7 +6,7 @@ type Dictionary<T> = { [key: string]: T }
 type CallbackFunction = (params: Dictionary<string>) => string;
 
 type Breadcrumbs = {
-  label: string | CallbackFunction
+  label: string
   parent: string
 }
 
@@ -23,9 +23,14 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
           return this.$route.matched
             .flatMap((route: RouteRecord) => {
               let routeRecord: RouteRecord[] = [route];
+              let breadcrumb = route.meta?.breadcrumb;
 
-              if (route.meta?.breadcrumb?.parent) {
-                const matched = this.$router.resolve({ name: route.meta.breadcrumb.parent }).route.matched
+              if (typeof breadcrumb === 'function') {
+                breadcrumb = breadcrumb.call(this, this.$route.params);
+              }
+
+              if (breadcrumb?.parent) {
+                const matched = this.$router.resolve({ name: breadcrumb.parent }).route.matched
 
                 routeRecord = [...matched, ...routeRecord];
               }
@@ -45,12 +50,12 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
         getBreadcrumb(bc: string | CallbackFunction | Breadcrumbs): string {
           let name = bc;
 
-          if (typeof name === 'object') {
-            name = name.label
+          if (typeof name === 'function') {
+            name = name.call(this, this.$route.params);
           }
 
-          if (typeof name === 'function') {
-            return name.call(this, this.$route.params);
+          if (typeof name === 'object') {
+            name = name.label
           }
 
           return name;
