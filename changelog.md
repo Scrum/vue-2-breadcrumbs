@@ -1,5 +1,18 @@
+## <small>0.7.9 (2020-07-21)</small>
+
+* docs: add dynamic breadcrumb example ([41324e7](https://github.com/Scrum/vue-2-breadcrumbs/commit/41324e7))
+* docs: add dynamic breadcrumbs example ([ec8ab79](https://github.com/Scrum/vue-2-breadcrumbs/commit/ec8ab79))
+* docs: add dynamic parent ([dfc255f](https://github.com/Scrum/vue-2-breadcrumbs/commit/dfc255f))
+* docs: rebuild bundle ([e80f35d](https://github.com/Scrum/vue-2-breadcrumbs/commit/e80f35d))
+* build: update dep dev ([dbc9990](https://github.com/Scrum/vue-2-breadcrumbs/commit/dbc9990))
+* perf: dynamic breadcrumbs, issue #99, #100 ([cc58782](https://github.com/Scrum/vue-2-breadcrumbs/commit/cc58782)), closes [#99](https://github.com/Scrum/vue-2-breadcrumbs/issues/99) [#100](https://github.com/Scrum/vue-2-breadcrumbs/issues/100)
+
+
+
 ## <small>0.7.8 (2020-06-30)</small>
 
+* 0.7.8 ([c9d17d3](https://github.com/Scrum/vue-2-breadcrumbs/commit/c9d17d3))
+* build: update changelog ([e1a4fea](https://github.com/Scrum/vue-2-breadcrumbs/commit/e1a4fea))
 * ci: perf run actions ([ea7d9cb](https://github.com/Scrum/vue-2-breadcrumbs/commit/ea7d9cb))
 * ci: remove coverage script and pkg, close #97 ([6ed5f87](https://github.com/Scrum/vue-2-breadcrumbs/commit/6ed5f87)), closes [#97](https://github.com/Scrum/vue-2-breadcrumbs/issues/97)
 
