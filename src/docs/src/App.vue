@@ -28,6 +28,9 @@
           <li>
             <router-link to="/parent">Parent</router-link>
           </li>
+          <li>
+            <router-link to="/multi-parents">Multi Parents</router-link>
+          </li>
         </ul>
         <ul>
           <li>
