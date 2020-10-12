@@ -1,10 +1,22 @@
+## <small>0.7.10 (2020-10-12)</small>
+
+* docs: add multi parents, issue, #105 ([3f40102](https://github.com/Scrum/vue-2-breadcrumbs/commit/3f40102)), closes [#105](https://github.com/Scrum/vue-2-breadcrumbs/issues/105)
+* docs: rebuild bundle ([66ac684](https://github.com/Scrum/vue-2-breadcrumbs/commit/66ac684))
+* docs: rebuild bundles ([f6a009e](https://github.com/Scrum/vue-2-breadcrumbs/commit/f6a009e))
+* build: update dep dev ([6b2debe](https://github.com/Scrum/vue-2-breadcrumbs/commit/6b2debe))
+* fix: incorrect resolve multi parents, close #105 ([ca1831d](https://github.com/Scrum/vue-2-breadcrumbs/commit/ca1831d)), closes [#105](https://github.com/Scrum/vue-2-breadcrumbs/issues/105)
+
+
+
 ## <small>0.7.9 (2020-07-21)</small>
 
+* 0.7.9 ([0a2a260](https://github.com/Scrum/vue-2-breadcrumbs/commit/0a2a260))
+* build: update changelog ([421fee1](https://github.com/Scrum/vue-2-breadcrumbs/commit/421fee1))
+* build: update dep dev ([dbc9990](https://github.com/Scrum/vue-2-breadcrumbs/commit/dbc9990))
 * docs: add dynamic breadcrumb example ([41324e7](https://github.com/Scrum/vue-2-breadcrumbs/commit/41324e7))
 * docs: add dynamic breadcrumbs example ([ec8ab79](https://github.com/Scrum/vue-2-breadcrumbs/commit/ec8ab79))
 * docs: add dynamic parent ([dfc255f](https://github.com/Scrum/vue-2-breadcrumbs/commit/dfc255f))
 * docs: rebuild bundle ([e80f35d](https://github.com/Scrum/vue-2-breadcrumbs/commit/e80f35d))
-* build: update dep dev ([dbc9990](https://github.com/Scrum/vue-2-breadcrumbs/commit/dbc9990))
 * perf: dynamic breadcrumbs, issue #99, #100 ([cc58782](https://github.com/Scrum/vue-2-breadcrumbs/commit/cc58782)), closes [#99](https://github.com/Scrum/vue-2-breadcrumbs/issues/99) [#100](https://github.com/Scrum/vue-2-breadcrumbs/issues/100)
 
 
