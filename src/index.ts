@@ -17,9 +17,22 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
       options.render = undefined;
     }
 
+
     Object.defineProperties(Vue.prototype, {
       $breadcrumbs: {
         get(): RouteRecord[] {
+          function findParents(this: Vue, routeName: string, matches: RouteRecord[] = []): RouteRecord[] {
+            const [routeParent]: RouteRecord[] = this.$router.resolve({ name: routeName }).route.matched;
+            matches.unshift(routeParent);
+            const parentName: string = routeParent.meta?.breadcrumb?.parent;
+
+            if (parentName) {
+              return findParents.call(this, routeParent.meta.breadcrumb.parent, matches);
+            }
+
+            return matches;
+          }
+
           return this.$route.matched
             .flatMap((route: RouteRecord) => {
               let routeRecord: RouteRecord[] = [route];
@@ -30,8 +43,7 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
               }
 
               if (breadcrumb?.parent) {
-                const matched = this.$router.resolve({ name: breadcrumb.parent }).route.matched
-
+                const matched = findParents.call(this, breadcrumb.parent, []);
                 routeRecord = [...matched, ...routeRecord];
               }
 
