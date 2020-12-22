@@ -1,9 +1,21 @@
+## <small>0.7.11 (2020-12-22)</small>
+
+* docs: rebuild bundle ([37d4c4b](https://github.com/Scrum/vue-2-breadcrumbs/commit/37d4c4b))
+* docs: update badges ([698b28e](https://github.com/Scrum/vue-2-breadcrumbs/commit/698b28e))
+* build: update dep dev ([821af44](https://github.com/Scrum/vue-2-breadcrumbs/commit/821af44))
+* build(deps): bump ini from 1.3.5 to 1.3.7 ([751f6fe](https://github.com/Scrum/vue-2-breadcrumbs/commit/751f6fe))
+* fix: not full matched parents, close #109 ([e03fda9](https://github.com/Scrum/vue-2-breadcrumbs/commit/e03fda9)), closes [#109](https://github.com/Scrum/vue-2-breadcrumbs/issues/109)
+
+
+
 ## <small>0.7.10 (2020-10-12)</small>
 
+* 0.7.10 ([ce0610a](https://github.com/Scrum/vue-2-breadcrumbs/commit/ce0610a))
+* build: update changelog ([fe99b9d](https://github.com/Scrum/vue-2-breadcrumbs/commit/fe99b9d))
+* build: update dep dev ([6b2debe](https://github.com/Scrum/vue-2-breadcrumbs/commit/6b2debe))
 * docs: add multi parents, issue, #105 ([3f40102](https://github.com/Scrum/vue-2-breadcrumbs/commit/3f40102)), closes [#105](https://github.com/Scrum/vue-2-breadcrumbs/issues/105)
 * docs: rebuild bundle ([66ac684](https://github.com/Scrum/vue-2-breadcrumbs/commit/66ac684))
 * docs: rebuild bundles ([f6a009e](https://github.com/Scrum/vue-2-breadcrumbs/commit/f6a009e))
-* build: update dep dev ([6b2debe](https://github.com/Scrum/vue-2-breadcrumbs/commit/6b2debe))
 * fix: incorrect resolve multi parents, close #105 ([ca1831d](https://github.com/Scrum/vue-2-breadcrumbs/commit/ca1831d)), closes [#105](https://github.com/Scrum/vue-2-breadcrumbs/issues/105)
 
 
