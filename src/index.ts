@@ -22,15 +22,17 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
       $breadcrumbs: {
         get(): RouteRecord[] {
           function findParents(this: Vue, routeName: string, matches: RouteRecord[] = []): RouteRecord[] {
-            const [routeParent]: RouteRecord[] = this.$router.resolve({ name: routeName }).route.matched;
-            matches.unshift(routeParent);
-            const parentName: string = routeParent.meta?.breadcrumb?.parent;
+            const routeParents: RouteRecord[] = this.$router.resolve({ name: routeName }).route.matched;
+            const routeParentLast: RouteRecord | undefined = routeParents.pop();
 
-            if (parentName) {
-              return findParents.call(this, routeParent.meta.breadcrumb.parent, matches);
+            if (routeParentLast) {
+              matches.unshift(routeParentLast);
+              const parentName: string = routeParentLast.meta?.breadcrumb?.parent;
+              if (parentName) {
+                return findParents.call(this, routeParentLast.meta.breadcrumb.parent, matches);
+              }
             }
-
-            return matches;
+            return routeParents.concat(matches);
           }
 
           return this.$route.matched
