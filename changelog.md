@@ -1,9 +1,20 @@
+## <small>0.7.12 (2021-01-26)</small>
+
+* docs: update docs ([246c162](https://github.com/Scrum/vue-2-breadcrumbs/commit/246c162))
+* build: perf version commit ([07a9432](https://github.com/Scrum/vue-2-breadcrumbs/commit/07a9432))
+* build: update dep dev ([e20751f](https://github.com/Scrum/vue-2-breadcrumbs/commit/e20751f))
+* Fix missing nested dynamic parents ([9793cfa](https://github.com/Scrum/vue-2-breadcrumbs/commit/9793cfa))
+
+
+
 ## <small>0.7.11 (2020-12-22)</small>
 
-* docs: rebuild bundle ([37d4c4b](https://github.com/Scrum/vue-2-breadcrumbs/commit/37d4c4b))
-* docs: update badges ([698b28e](https://github.com/Scrum/vue-2-breadcrumbs/commit/698b28e))
+* 0.7.11 ([1313ba2](https://github.com/Scrum/vue-2-breadcrumbs/commit/1313ba2))
+* build: update changelog ([3b50573](https://github.com/Scrum/vue-2-breadcrumbs/commit/3b50573))
 * build: update dep dev ([821af44](https://github.com/Scrum/vue-2-breadcrumbs/commit/821af44))
 * build(deps): bump ini from 1.3.5 to 1.3.7 ([751f6fe](https://github.com/Scrum/vue-2-breadcrumbs/commit/751f6fe))
+* docs: rebuild bundle ([37d4c4b](https://github.com/Scrum/vue-2-breadcrumbs/commit/37d4c4b))
+* docs: update badges ([698b28e](https://github.com/Scrum/vue-2-breadcrumbs/commit/698b28e))
 * fix: not full matched parents, close #109 ([e03fda9](https://github.com/Scrum/vue-2-breadcrumbs/commit/e03fda9)), closes [#109](https://github.com/Scrum/vue-2-breadcrumbs/issues/109)
 
 
