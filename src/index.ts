@@ -27,9 +27,15 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
 
             if (routeParentLast) {
               matches.unshift(routeParentLast);
-              const parentName: string = routeParentLast.meta?.breadcrumb?.parent;
-              if (parentName) {
-                return findParents.call(this, routeParentLast.meta.breadcrumb.parent, matches);
+
+              let breadcrumb = routeParentLast.meta?.breadcrumb;
+
+              if (typeof breadcrumb === 'function') {
+                breadcrumb = breadcrumb.call(this, this.$route.params);
+              }
+
+              if (breadcrumb?.parent) {
+                return findParents.call(this, breadcrumb.parent, matches);
               }
             }
             return routeParents.concat(matches);
