@@ -18,7 +18,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md && git commit -m \"build: update changelog\"",
+    "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md",
     "prepare": "npm run build",
     "build": "rimraf lib && rollup -c",
     "build:w": "rimraf lib && rollup -c -w",
