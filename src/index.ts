@@ -82,7 +82,7 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
         },
         getPath(crumb: RouteRecord): string {
           let { path } = crumb;
-
+          path = path.replace(/\((.*?)\)/, '');
           for (const [key, value] of Object.entries(this.$route.params)) {
             path = path.replace(`:${key}`, value);
           }
