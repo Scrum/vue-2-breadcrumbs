@@ -6,6 +6,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/vue-2-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/vue-2-breadcrumbs)[![npm](https://img.shields.io/npm/dt/vue-2-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/vue-2-breadcrumbs)[![size](https://badgen.net/bundlephobia/minzip/vue-2-breadcrumbs?color=364a5e&style=flat)](https://www.npmjs.com/package/vue-2-breadcrumbs)
 
 ## Support
+- Support Nuxjs ([example](https://github.com/Scrum/vue-2-breadcrumbs/tree/master/example/nuxtjs))
 - Support SSR
 - Setting parent route without need to actually nest it in children array
 - Customized template

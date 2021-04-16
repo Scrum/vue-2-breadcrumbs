@@ -1,0 +1,54 @@
+[
+  {
+    "path": "/Fun",
+    "component": "/Users/ivandemidov/Projects/vue-folder/vue-2-breadcrumbs/example/nuxtjs/pages/Fun.vue",
+    "chunkName": "pages/Fun",
+    "children": [
+      {
+        "name": "Fun",
+        "path": "",
+        "component": "/Users/ivandemidov/Projects/vue-folder/vue-2-breadcrumbs/example/nuxtjs/pages/Fun/index.vue",
+        "chunkName": "pages/Fun/index",
+        "_name": "_2a246772"
+      },
+      {
+        "path": ":id",
+        "component": "/Users/ivandemidov/Projects/vue-folder/vue-2-breadcrumbs/example/nuxtjs/pages/Fun/_id.vue",
+        "chunkName": "pages/Fun/_id",
+        "children": [
+          {
+            "name": "Fun-id",
+            "path": "",
+            "component": "/Users/ivandemidov/Projects/vue-folder/vue-2-breadcrumbs/example/nuxtjs/pages/Fun/_id/index.vue",
+            "chunkName": "pages/Fun/_id/index",
+            "_name": "_be8f0d46"
+          },
+          {
+            "path": ":name",
+            "component": "/Users/ivandemidov/Projects/vue-folder/vue-2-breadcrumbs/example/nuxtjs/pages/Fun/_id/_name.vue",
+            "chunkName": "pages/Fun/_id/_name",
+            "children": [
+              {
+                "name": "Fun-id-name",
+                "path": "",
+                "component": "/Users/ivandemidov/Projects/vue-folder/vue-2-breadcrumbs/example/nuxtjs/pages/Fun/_id/_name/index.vue",
+                "chunkName": "pages/Fun/_id/_name/index",
+                "_name": "_36a272b8"
+              }
+            ],
+            "_name": "_43f477f5"
+          }
+        ],
+        "_name": "_43acc34c"
+      }
+    ],
+    "_name": "_ab59ffa2"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/ivandemidov/Projects/vue-folder/vue-2-breadcrumbs/example/nuxtjs/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_1c9f1422"
+  }
+]
