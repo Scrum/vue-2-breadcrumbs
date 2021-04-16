@@ -10,6 +10,12 @@ type Breadcrumbs = {
   parent: string
 }
 
+function pathSeparate(path: string): string[] {
+  const ROOT = '/';
+  const SEPARATOR = '/';
+  return path.slice(ROOT.length).split(SEPARATOR).reverse();
+}
+
 class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
   public install(Vue: VueConstructor<Vue>, options: Dictionary<any> = {}) {
 
@@ -30,6 +36,12 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
 
               let breadcrumb = routeParentLast.meta?.breadcrumb;
 
+              if (breadcrumb === undefined) {
+                if (routeParentLast.name) {
+                  breadcrumb = routeParentLast.name;
+                }
+              }
+
               if (typeof breadcrumb === 'function') {
                 breadcrumb = breadcrumb.call(this, this.$route.params);
               }
@@ -41,10 +53,49 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
             return routeParents.concat(matches);
           }
 
+          function resolveByPath(route: RouteRecord, params: Record<string, any>): void {
+            const [label] = pathSeparate(route.path);
+            const isRoot: boolean = route.parent === undefined;
+            const isRootChildren = label.length === 0;
+            const isDynamicPath = label.startsWith(':');
+
+            if (isRoot && isRootChildren) {
+              // TODO: add options home name
+              // const label = 'Home';
+              route.meta.breadcrumb = 'Home';
+              return;
+            }
+
+            if (isRoot) {
+              route.meta.breadcrumb = label;
+              return;
+            }
+
+            if (isRootChildren && route.meta?.breadcrumb) {
+              delete route.meta.breadcrumb;
+              return;
+            }
+
+            if (isDynamicPath) {
+              const key = label.slice(1);
+              if (Reflect.has(params, key)) {
+                route.meta.breadcrumb = params[key];
+                return;
+              }
+            }
+
+            route.meta.breadcrumb = label
+            return;
+          }
+
           return this.$route.matched
             .flatMap((route: RouteRecord) => {
               let routeRecord: RouteRecord[] = [route];
               let breadcrumb = route.meta?.breadcrumb;
+
+              if (breadcrumb === undefined) {
+                resolveByPath(route, this.$route.params);
+              }
 
               if (typeof breadcrumb === 'function') {
                 breadcrumb = breadcrumb.call(this, this.$route.params);
