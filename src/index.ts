@@ -10,6 +10,12 @@ type Breadcrumbs = {
   parent: string
 }
 
+function pathSeparate(path: string): string[] {
+  const ROOT = '/';
+  const SEPARATOR = '/';
+  return path.slice(ROOT.length).split(SEPARATOR).reverse();
+}
+
 class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
   public install(Vue: VueConstructor<Vue>, options: Dictionary<any> = {}) {
 
@@ -47,36 +53,39 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
             return routeParents.concat(matches);
           }
 
-          function resolveByName(route: RouteRecord, params: Record<string, any>): string {
-            route.meta.breadcrumb = {};
-
+          function resolveByPath(route: RouteRecord, params: Record<string, any>): void {
+            const [label] = pathSeparate(route.path);
             const isRoot: boolean = route.parent === undefined;
-            const isRootChildren = isRoot === false && route.path.split('/').reverse()[0].length === 0;
-            let label = route.name;
+            const isRootChildren = label.length === 0;
+            const isDynamicPath = label.startsWith(':');
 
-            if (isRoot && label === undefined) {
-              label = route.path.replace(/\//, '');
-              route.meta.breadcrumb = label;
+            if (isRoot && isRootChildren) {
+              // TODO: add options home name
+              // const label = 'Home';
+              route.meta.breadcrumb = 'Home';
+              return;
             }
 
-            if (isRootChildren) {
-              if (label && route.parent) {
-                route.parent.meta.breadcrumb = label;
-              }
+            if (isRoot) {
+              route.meta.breadcrumb = label;
+              return;
+            }
+
+            if (isRootChildren && route.meta?.breadcrumb) {
               delete route.meta.breadcrumb;
+              return;
             }
 
-            if (isRoot === false && isRootChildren === false) {
-              label = label?.split('-').reverse()[0];
-
-              if (label && Reflect.has(params, label)) {
-                label = params[label];
+            if (isDynamicPath) {
+              const key = label.slice(1);
+              if (Reflect.has(params, key)) {
+                route.meta.breadcrumb = params[key];
+                return;
               }
-
-              route.meta.breadcrumb = label;
             }
 
-            return label ?? ''
+            route.meta.breadcrumb = label
+            return;
           }
 
           return this.$route.matched
@@ -85,7 +94,7 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
               let breadcrumb = route.meta?.breadcrumb;
 
               if (breadcrumb === undefined) {
-                breadcrumb = resolveByName(route, this.$route.params);
+                resolveByPath(route, this.$route.params);
               }
 
               if (typeof breadcrumb === 'function') {
