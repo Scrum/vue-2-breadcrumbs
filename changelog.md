@@ -1,9 +1,21 @@
+## 0.8.0 (2021-04-16)
+
+* build: ignore build static ([798c068](https://github.com/Scrum/vue-2-breadcrumbs/commit/798c068))
+* build: ignore example for npm ([721c941](https://github.com/Scrum/vue-2-breadcrumbs/commit/721c941))
+* build(deps): bump y18n from 4.0.0 to 4.0.1 ([83d450f](https://github.com/Scrum/vue-2-breadcrumbs/commit/83d450f))
+* docs: add nuxtjs example, issue #115 ([ca25cfb](https://github.com/Scrum/vue-2-breadcrumbs/commit/ca25cfb)), closes [#115](https://github.com/Scrum/vue-2-breadcrumbs/issues/115)
+* feat: add nuxtjs support, close #115 ([cbacf68](https://github.com/Scrum/vue-2-breadcrumbs/commit/cbacf68)), closes [#115](https://github.com/Scrum/vue-2-breadcrumbs/issues/115)
+* feat: resolve by name for nuxtjs, close #115 ([bb0a6e8](https://github.com/Scrum/vue-2-breadcrumbs/commit/bb0a6e8)), closes [#115](https://github.com/Scrum/vue-2-breadcrumbs/issues/115)
+
+
+
 ## <small>0.7.12 (2021-01-26)</small>
 
+* 0.7.12 ([4ea6d6a](https://github.com/Scrum/vue-2-breadcrumbs/commit/4ea6d6a))
+* Fix missing nested dynamic parents ([9793cfa](https://github.com/Scrum/vue-2-breadcrumbs/commit/9793cfa))
 * docs: update docs ([246c162](https://github.com/Scrum/vue-2-breadcrumbs/commit/246c162))
 * build: perf version commit ([07a9432](https://github.com/Scrum/vue-2-breadcrumbs/commit/07a9432))
 * build: update dep dev ([e20751f](https://github.com/Scrum/vue-2-breadcrumbs/commit/e20751f))
-* Fix missing nested dynamic parents ([9793cfa](https://github.com/Scrum/vue-2-breadcrumbs/commit/9793cfa))
 
 
 
