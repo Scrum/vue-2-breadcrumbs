@@ -154,6 +154,24 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
               if (crumb?.meta?.breadcrumb) {
                 const label = this.getBreadcrumb(crumb.meta.breadcrumb);
                 if (label?.length > 0) {
+                  let item;
+                  if (index !== this.$breadcrumbs.length - 1) {
+                    item = createElement(
+                      'router-link',
+                      {
+                        props: {
+                          to: { path: this.getPath(crumb) },
+                          tag: 'a'
+                        }
+                      },
+                      ` ${label}`
+                    );
+                  }
+                  else {
+                    item = createElement(
+                      'span', ` ${label}`
+                    );
+                  }
                   return createElement(
                     'li',
                     {
@@ -165,16 +183,7 @@ class VueBreadcrumbs implements PluginObject<ComponentOptions<Vue>> {
                       }
                     },
                     [
-                      createElement(
-                        'router-link',
-                        {
-                          props: {
-                            to: { path: this.getPath(crumb) },
-                            tag: index !== this.$breadcrumbs.length - 1 ? 'a' : 'span'
-                          }
-                        },
-                        ` ${label}`
-                      )
+                      item
                     ]
                   )
                 }
