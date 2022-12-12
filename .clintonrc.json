@@ -13,6 +13,7 @@
     "pkg-main": "off",
     "xo": "off",
     "use-travis": "off",
-    "ava": "off"
+    "ava": "off",
+    "pkg-schema": "off"
   }
 }
