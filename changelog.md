@@ -1,5 +1,34 @@
+## <small>0.8.1 (2022-12-12)</small>
+
+* feat: plain span element for last item ([c3d2636](https://github.com/Scrum/vue-2-breadcrumbs/commit/c3d2636))
+* ci: bump node versions on github build ([af096f2](https://github.com/Scrum/vue-2-breadcrumbs/commit/af096f2))
+* ci: disable pkg-schema validation ([53a6b83](https://github.com/Scrum/vue-2-breadcrumbs/commit/53a6b83))
+* Generate new package-lock for newer npm versions ([cb02058](https://github.com/Scrum/vue-2-breadcrumbs/commit/cb02058))
+* Update funding.yml ([48a334a](https://github.com/Scrum/vue-2-breadcrumbs/commit/48a334a))
+* Update funding.yml ([3b3e5a3](https://github.com/Scrum/vue-2-breadcrumbs/commit/3b3e5a3))
+* Update funding.yml ([8e1974d](https://github.com/Scrum/vue-2-breadcrumbs/commit/8e1974d))
+* Update funding.yml ([fe24bfd](https://github.com/Scrum/vue-2-breadcrumbs/commit/fe24bfd))
+* build(deps): bump browserslist from 4.16.4 to 4.16.6 in /example/nuxtjs ([6e17e77](https://github.com/Scrum/vue-2-breadcrumbs/commit/6e17e77))
+* build(deps): bump handlebars from 4.7.6 to 4.7.7 ([f08913a](https://github.com/Scrum/vue-2-breadcrumbs/commit/f08913a))
+* build(deps): bump hosted-git-info from 2.8.8 to 2.8.9 ([6a1ade2](https://github.com/Scrum/vue-2-breadcrumbs/commit/6a1ade2))
+* build(deps): bump lodash from 4.17.15 to 4.17.21 ([c152863](https://github.com/Scrum/vue-2-breadcrumbs/commit/c152863))
+* build(deps): bump nanoid from 3.1.22 to 3.2.0 in /example/nuxtjs ([ce57300](https://github.com/Scrum/vue-2-breadcrumbs/commit/ce57300))
+* build(deps): bump normalize-url from 4.5.0 to 4.5.1 ([174d4c9](https://github.com/Scrum/vue-2-breadcrumbs/commit/174d4c9))
+* build(deps): bump path-parse from 1.0.6 to 1.0.7 ([aaac267](https://github.com/Scrum/vue-2-breadcrumbs/commit/aaac267))
+* build(deps): bump path-parse from 1.0.6 to 1.0.7 in /example/nuxtjs ([6bfb74d](https://github.com/Scrum/vue-2-breadcrumbs/commit/6bfb74d))
+* build(deps): bump postcss from 7.0.35 to 7.0.36 ([1e178df](https://github.com/Scrum/vue-2-breadcrumbs/commit/1e178df))
+* build(deps): bump postcss from 7.0.35 to 7.0.36 in /example/nuxtjs ([1a52fd8](https://github.com/Scrum/vue-2-breadcrumbs/commit/1a52fd8))
+* build(deps): bump shelljs from 0.8.4 to 0.8.5 ([59fc68b](https://github.com/Scrum/vue-2-breadcrumbs/commit/59fc68b))
+* build(deps): bump tar from 6.1.0 to 6.1.5 in /example/nuxtjs ([45ea0d5](https://github.com/Scrum/vue-2-breadcrumbs/commit/45ea0d5))
+* build(deps): bump tar from 6.1.5 to 6.1.11 in /example/nuxtjs ([8c4ba79](https://github.com/Scrum/vue-2-breadcrumbs/commit/8c4ba79))
+* build(deps): bump trim-off-newlines from 1.0.1 to 1.0.3 ([73b8ec7](https://github.com/Scrum/vue-2-breadcrumbs/commit/73b8ec7))
+* build(deps): bump ws from 7.4.4 to 7.4.6 in /example/nuxtjs ([49be46a](https://github.com/Scrum/vue-2-breadcrumbs/commit/49be46a))
+
+
+
 ## 0.8.0 (2021-04-16)
 
+* 0.8.0 ([0e957ea](https://github.com/Scrum/vue-2-breadcrumbs/commit/0e957ea))
 * build: ignore build static ([798c068](https://github.com/Scrum/vue-2-breadcrumbs/commit/798c068))
 * build: ignore example for npm ([721c941](https://github.com/Scrum/vue-2-breadcrumbs/commit/721c941))
 * build(deps): bump y18n from 4.0.0 to 4.0.1 ([83d450f](https://github.com/Scrum/vue-2-breadcrumbs/commit/83d450f))
